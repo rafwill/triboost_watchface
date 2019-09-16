@@ -1,0 +1,11 @@
+<layout id="WatchFace">
+    <bitmap id="triboost" x="center" y="140" filename="../drawables/Triboost_small.png" />
+    <label id="DateString" x="center" y="start" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_YELLOW" />
+    <label id="Hour" x="center" y="20" font="@Fonts.calibri_numbers" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_YELLOW" />
+    <label id="Min" x="center" y="75" font="@Fonts.calibri_numbers" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY" />
+    <label id="StepLabel" x="center" y="45" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+	<label id="altitude" x="center" y="65" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+	<label id="battery" x="center" y="85" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+	<label id="phone" x="center" y="105" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_YELLOW" />
+	<label id="notphone" x="center" y="105" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+</layout>

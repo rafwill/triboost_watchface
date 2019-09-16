@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestBackground.mc" id="3" lineNum="7" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestBackground.mc" id="3" lineNum="8" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestBackground.mc" id="3" lineNum="12" pc="268435481" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestBackground.mc" id="4" lineNum="15" pc="268435502" symbol="draw"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestBackground.mc" id="4" lineNum="17" pc="268435506" symbol="draw"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestBackground.mc" id="4" lineNum="18" pc="268435559" symbol="draw"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="6" lineNum="6" pc="268435572" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="6" lineNum="7" pc="268435576" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="7" lineNum="11" pc="268435595" symbol="onStart"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="8" lineNum="15" pc="268435600" symbol="onStop"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="9" lineNum="19" pc="268435605" symbol="getInitialView"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="9" lineNum="20" pc="268435609" symbol="getInitialView"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="10" lineNum="24" pc="268435647" symbol="onSettingsChanged"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestApp.mc" id="10" lineNum="25" pc="268435651" symbol="onSettingsChanged"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="12" lineNum="18" pc="268435668" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="12" lineNum="19" pc="268435672" symbol="initialize"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="13" lineNum="23" pc="268435691" symbol="onLayout"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="13" lineNum="24" pc="268435695" symbol="onLayout"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="14" lineNum="30" pc="268435733" symbol="onShow"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="34" pc="268435738" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="39" pc="268435742" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="40" pc="268435749" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="41" pc="268435766" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="42" pc="268435776" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="43" pc="268435801" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="44" pc="268435811" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="45" pc="268435822" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="48" pc="268435835" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="49" pc="268435848" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="50" pc="268435906" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="51" pc="268435930" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="55" pc="268435954" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="56" pc="268435998" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="64" pc="268436074" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="67" pc="268436092" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="68" pc="268436109" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="69" pc="268436119" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="75" pc="268436129" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="77" pc="268436146" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="80" pc="268436162" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="82" pc="268436193" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="86" pc="268436217" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="88" pc="268436249" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="93" pc="268436279" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="94" pc="268436282" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="95" pc="268436285" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="96" pc="268436311" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="97" pc="268436348" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="98" pc="268436380" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="99" pc="268436398" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="102" pc="268436408" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="103" pc="268436446" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="104" pc="268436464" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="107" pc="268436474" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="108" pc="268436481" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="109" pc="268436488" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="116" pc="268436512" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="117" pc="268436536" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="118" pc="268436577" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="120" pc="268436591" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="121" pc="268436615" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="123" pc="268436629" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="124" pc="268436653" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="126" pc="268436667" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="127" pc="268436691" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="129" pc="268436705" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="130" pc="268436729" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="132" pc="268436743" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="133" pc="268436767" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="138" pc="268436781" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="139" pc="268436804" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="140" pc="268436807" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="141" pc="268436815" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="142" pc="268436822" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="143" pc="268436846" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="144" pc="268436860" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="147" pc="268436887" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="148" pc="268436894" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="149" pc="268436918" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="150" pc="268436932" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="15" lineNum="159" pc="268436956" symbol="onUpdate"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="16" lineNum="165" pc="268436977" symbol="onHide"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="17" lineNum="169" pc="268436982" symbol="onExitSleep"/>
+<entry filename="C:\\Aplicaciones\\eclipse\\workspace\\Triboost\\source\\TestView.mc" id="18" lineNum="173" pc="268436987" symbol="onEnterSleep"/>
+<entry filename="Rez" id="24" lineNum="20" pc="268436992" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="21" pc="268437004" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="22" pc="268437045" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="24" pc="268437086" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="25" pc="268437198" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="26" pc="268437238" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="27" pc="268437368" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="28" pc="268437491" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="29" pc="268437614" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="30" pc="268437737" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="31" pc="268437860" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="32" pc="268437983" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="33" pc="268438106" symbol="WatchFace"/>
+<entry filename="Rez" id="24" lineNum="35" pc="268438229" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="17" symbol="custom"/>
+<entry field="true" id="20" symbol="ColorBlue"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="27" symbol="ColorWhite"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="26" symbol="ColorBlack"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="21" symbol="ColorRed"/>
+<entry id="9" object="true" symbol="TestApp"/>
+<entry field="true" id="22" symbol="ForegroundColorTitle"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="28" symbol="AppName"/>
+<entry field="true" id="13" symbol="triboost"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry field="true" id="14" symbol="LauncherIcon"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="10" object="true" symbol="TestView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="24" symbol="ColorDarkGray"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry id="8389348" symbol="font"/>
+<entry field="true" id="19" symbol="ColorLightGray"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="23" symbol="BackgroundColorTitle"/>
+<entry field="true" id="15" symbol="geo_small"/>
+<entry id="11" module="true" symbol="Layouts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="25" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="16" symbol="geo_number_small"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="12" module="true" symbol="Menus"/>
+<entry field="true" id="18" symbol="calibri_numbers"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435501" name="dictionary" stackId="1" startPc="268435460"/>
+<entry endPc="268435572" name="dc" stackId="1" startPc="268435502"/>
+<entry endPc="268435600" name="state" stackId="1" startPc="268435595"/>
+<entry endPc="268435605" name="state" stackId="1" startPc="268435600"/>
+<entry endPc="268435733" name="dc" stackId="1" startPc="268435691"/>
+<entry endPc="268436976" name="timeFormat" stackId="2" startPc="268435742"/>
+<entry endPc="268436976" name="stepsGoal" stackId="10" startPc="268435742"/>
+<entry endPc="268436976" name="activity" stackId="9" startPc="268435742"/>
+<entry endPc="268436976" name="batt" stackId="13" startPc="268435742"/>
+<entry endPc="268436976" name="phone" stackId="18" startPc="268435742"/>
+<entry endPc="268436976" name="hour" stackId="4" startPc="268435742"/>
+<entry endPc="268436976" name="strmin" stackId="6" startPc="268435742"/>
+<entry endPc="268436976" name="altitude" stackId="16" startPc="268435742"/>
+<entry endPc="268436976" name="strhour" stackId="5" startPc="268435742"/>
+<entry endPc="268436976" name="stepString" stackId="12" startPc="268435742"/>
+<entry endPc="268436976" name="view" stackId="17" startPc="268435742"/>
+<entry endPc="268436976" name="clockTime" stackId="3" startPc="268435742"/>
+<entry endPc="268436976" name="H2P2" stackId="15" startPc="268435742"/>
+<entry endPc="268436976" name="stepsLive" stackId="11" startPc="268435742"/>
+<entry endPc="268436976" name="today" stackId="7" startPc="268435742"/>
+<entry endPc="268436976" name="dateString" stackId="8" startPc="268435742"/>
+<entry endPc="268436976" name="connected" stackId="19" startPc="268435742"/>
+<entry endPc="268436976" name="H1P2" stackId="14" startPc="268435742"/>
+<entry endPc="268436977" name="dc" stackId="1" startPc="268435738"/>
+<entry endPc="268438326" name="rez_cmp_local_text_notphone" stackId="12" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_bitmap_triboost" stackId="4" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_Min" stackId="7" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_Hour" stackId="6" startPc="268437004"/>
+<entry endPc="268438326" name="local_Rez_Fonts_calibri_numbers" stackId="3" startPc="268437004"/>
+<entry endPc="268438326" name="local_Rez_Fonts_geo_small" stackId="2" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_battery" stackId="10" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_phone" stackId="11" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_StepLabel" stackId="8" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_DateString" stackId="5" startPc="268437004"/>
+<entry endPc="268438326" name="rez_cmp_local_text_altitude" stackId="9" startPc="268437004"/>
+<entry endPc="268438327" name="dc" stackId="1" startPc="268436992"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="182" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry offset="237" parentId="globals" symbolId="TestApp" type="class"/>
+<dataEntry offset="316" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="395" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="442" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="473" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="536" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="575" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="606" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="717" parentId="globals" symbolId="TestView" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="Background">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="Background">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="TestApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="TestApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="TestApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="TestApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSettingsChanged" parent="TestApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="TestView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="TestView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="WatchFace" parent="Layouts">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

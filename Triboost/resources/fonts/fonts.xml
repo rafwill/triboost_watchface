@@ -1,0 +1,6 @@
+<fonts>
+	<font id="geo_small" filename="geo_small.fnt" />
+	<font id="geo_number_small" filename="geo_number_small.fnt" filter="0123456789" />
+	<font id="custom" filename="custom.fnt" filter="0123456789" />
+	<font id="calibri_numbers" filename="calibri_numbers.fnt" filter="0123456789" />	
+</fonts>
