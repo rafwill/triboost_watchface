@@ -16,7 +16,7 @@ class TestView extends WatchUi.WatchFace {
 	
 
     function initialize() {
-        WatchFace.initialize();
+        WatchFace.initialize(); 
     }
 
     // Load your resources here
