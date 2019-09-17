@@ -1,45 +1,60 @@
-using Toybox.WatchUi;
-using Toybox.Graphics;
-using Toybox.System;
-using Toybox.Lang;
-using Toybox.Application;
-using Toybox.Activity;
-using Toybox.ActivityMonitor;
-using Toybox.Time;
-using Toybox.Time.Gregorian;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics as Gfx;
+using Toybox.System as Sys;
+using Toybox.Lang as Lang;
+using Toybox.Application as App;
+using Toybox.Activity as Act;
+using Toybox.ActivityMonitor as Actmon;
+using Toybox.Time as Time;
+using Toybox.Time.Gregorian as Greg;
 
 
 
-class TestView extends WatchUi.WatchFace {
+class TestView extends Ui.WatchFace {
 
-	//var geomanist = null;
-	
+	var geo_small = null;
+	var geo_number_small = null;
+	var custom = null;
+	var calibri_numbers = null;
+	var mirrored = false; 
+	var showNotifications = true;
+	   
 
-    function initialize() {
-        WatchFace.initialize(); 
-    }
 
-    // Load your resources here
+  
     function onLayout(dc) {
-        setLayout(Rez.Layouts.WatchFace(dc));
+    	geo_small = Ui.loadResource(Rez.Fonts.geo_small);
+    	geo_number_small = Ui.loadResource(Rez.Fonts.geo_number_small);
+    	custom = Ui.loadResource(Rez.Fonts.custom);
+    	calibri_numbers = Ui.loadResource(Rez.Fonts.calibri_numbers);
+    
     }
 
-    // Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
-    function onShow() {
-    }
-
+  
     // Update the view
     function onUpdate(dc) {
+    	var displayHeight = System.getDeviceSettings().screenHeight;
+        var displayWidth = System.getDeviceSettings().screenWidth;
+        var logo = null;
+        
+        // Shifting screen a little to the right for devices like FR235 to avoid numbers being cut off.
+		var xOffset = (displayHeight == 180) ? 12 : 0;
+		xOffset = mirrored ? -xOffset : xOffset;
+
+		var xLine = displayWidth/2 + xOffset;
+		var xTime = mirrored ? xLine + 10 : xLine - 10;
+		var xDate = mirrored ? xLine - 10 : xLine + 10;
+		var alignTime = mirrored ? Graphics.TEXT_JUSTIFY_LEFT : Graphics.TEXT_JUSTIFY_RIGHT;
+		var alignDate = mirrored ? Graphics.TEXT_JUSTIFY_RIGHT : Graphics.TEXT_JUSTIFY_LEFT;
     	
+    	dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
+    	dc.clear();
     	
-    
         // Get the current time and format it correctly
         var timeFormat = "$1$:$2$";
-        var clockTime = System.getClockTime();
+        var clockTime = Sys.getClockTime();
         var hour = clockTime.hour;
-        if (!System.getDeviceSettings().is24Hour) {
+        if (!Sys.getDeviceSettings().is24Hour) {
         	hour = hour % 12;
         	if (hour == 0) {
         		hour =12;
@@ -47,12 +62,16 @@ class TestView extends WatchUi.WatchFace {
         }
         var strhour = hour.toString();
         var strmin = Lang.format("$1$", [clockTime.min.format("%02d")]);
-        System.println("Hora:" + strhour);
-        System.println("Min:" + strmin);
+        Sys.println("Hora:" + strhour);
+        Sys.println("Min:" + strmin);
         
+        dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(dc.getWidth()/2 - 5, 23, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(dc.getWidth()/2 - 5, 80, calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_RIGHT);
         
         //Get date
-        var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+        var today = Greg.info(Time.now(), Time.FORMAT_MEDIUM);
 		var dateString = Lang.format(
     		"$1$ $2$ $3$",
     		[
@@ -61,15 +80,15 @@ class TestView extends WatchUi.WatchFace {
 		        today.month
 		    ]
 		);
-		System.println(dateString); // e.g. "16:28:32 Wed 1 Mar 2017"
+		Sys.println(dateString); 
+		
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(dc.getWidth()/2, 10, geo_small, dateString, Gfx.TEXT_JUSTIFY_CENTER);
         
         // Get steps, update the field
-        var activity = ActivityMonitor.getInfo();
+        var activity = Actmon.getInfo();
         var stepsGoal = activity.stepGoal;
         var stepsLive = activity.steps;
-        
-        //var altitude = Activity.getActivityInfo().altitude;
-        //System.println("ALtitude:" + altitude);
         
          
         if( activity.stepGoal == 0 ) {
@@ -79,100 +98,119 @@ class TestView extends WatchUi.WatchFace {
         }
         var stepString = stepsLive.toString() + "/" + stepsGoal.toString( );
 		
-		System.println("StepsString:" + stepString);
+		Sys.println("Pasos:" + stepString);
+		
+		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(dc.getWidth()/2 + 5, 82, geo_small, stepString, Gfx.TEXT_JUSTIFY_LEFT);
 		
 		
 		//Get Battery
-        var batt = System.getSystemStats().battery.toString();
-        //var batx = batt.toNumber();
-        System.println("Batt:"+ batt + "%");
-        //System.println("Batx:"+ batx + "%");
+        var batt = Sys.getSystemStats().battery.toString();
+        var batx = batt.toNumber();
+        Sys.println("Porcentaje de bateria:"+ batx + "%");
         
+        dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(dc.getWidth()/2 + 5, 42, geo_small, batx + "%", Gfx.TEXT_JUSTIFY_LEFT);
+		
         
         //Get altitude 
         var H1P2 = null;
         var H2P2 = null; 
-        if( Activity.getActivityInfo().altitude != null ) {
-			if(System.getDeviceSettings().elevationUnits == System.UNIT_METRIC){
-			H1P2 = Activity.getActivityInfo().altitude.toFloat();
+        if( Act.getActivityInfo().altitude != null ) {
+			if(Sys.getDeviceSettings().elevationUnits == Sys.UNIT_METRIC){
+			H1P2 = Act.getActivityInfo().altitude.toFloat();
 			H1P2 = H1P2.format( "%.0d" );
 			H2P2 = " m";
 			}
 		else{
-			H1P2 = Activity.getActivityInfo().altitude.toFloat() * 3.2808399;
+			H1P2 = Act.getActivityInfo().altitude.toFloat() * 3.2808399;
 			H1P2 = H1P2.format( "%.0d" );
 			H2P2 = " ft";
 			}
 		}
 		else{H1P2 = "No data";}
 		var altitude = H1P2 + H2P2;
-		System.println("altitude:" + altitude);
+		Sys.println("Altitud:" + altitude);
 		
 		
+		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(dc.getWidth()/2 + 5, 62, geo_small, altitude, Gfx.TEXT_JUSTIFY_LEFT);
 		
-		
-        // Update the view
         
-        var view = View.findDrawableById("DateString");
-        view.setColor(Application.getApp().getProperty("ForegroundColor"));
-        view.setText(dateString);
-        
-        view = View.findDrawableById("Hour");
-        view.setText(strhour);
-        
-        view = View.findDrawableById("Min");
-        view.setText(strmin);
-        
-        view = View.findDrawableById("StepLabel");
-        view.setText(stepString);
-        
-        view = View.findDrawableById("altitude");
-        view.setText(altitude);
-        
-        view = View.findDrawableById("battery");
-        view.setText(batt);
         
         
        //Get Phone Conected
 		
-		var phone = System.getDeviceSettings().phoneConnected;
+		var phone = Sys.getDeviceSettings().phoneConnected;
 		var connected = null;
 		if (phone == true) {
-			connected = "connected";
-			view = View.findDrawableById("phone");
-        	view.setText(connected);
-        	System.println("connected:" + connected);
+			connected = "Conectado";
+			dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
+			dc.drawText(dc.getWidth()/2 + 5, 102, geo_small, connected, Gfx.TEXT_JUSTIFY_LEFT);
+			Sys.println("Telefono " + connected);
 		}
 		else {
-			connected = "connected";
-			view = View.findDrawableById("notphone");
-        	view.setText(connected);
-        	System.println("notconnected:" + connected);
+			connected = "Conectado";
+			dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+			dc.drawText(dc.getWidth()/2 + 5, 102, geo_small, connected, Gfx.TEXT_JUSTIFY_LEFT);
+			Sys.println("Telefono no " + connected);
 		}
         
+        //Fancy Line
         
-        //dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-		//dc.drawText(dc.getWidth()/2, dc.getHeight() / 2, Graphics.FONT_LARGE, "altitude:" + altitude, Graphics.TEXT_JUSTIFY_CENTER);
-		  
-           
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+        dc.setColor(Gfx.COLOR_YELLOW,Gfx.COLOR_TRANSPARENT);
+		dc.drawLine(xLine,40,xLine,145);    
+        
+        
+        /*Notifications with icon
+        if (Sys.DeviceSettings has :phoneConnected) {
+        	dc.setColor(Gfx.COLOR_YELLOW,Gfx.COLOR_TRANSPARENT);
+        	if (showNotifications && Sys.getDeviceSettings().notificationCount > 0) {
+        		//drawNotificationSymbol(dc,mirrored ? xDate-15 : xDate, displayHeight/2 - 0.5*Gfx.getFontHeight(geo_small));
+        		drawNotificationSymbol(dc,dc.getWidth()/2 + 5, 143);
+        		dc.drawText(dc.getWidth()/2 + 25, 125, geo_small, "mensajes" , Gfx.TEXT_JUSTIFY_LEFT);
+			
+			} 
+        }*/
+        
+        if (Sys.DeviceSettings has :phoneConnected) {
+        	if (showNotifications && Sys.getDeviceSettings().notificationCount == 0) {
+        		dc.setColor(Gfx.COLOR_WHITE,Gfx.COLOR_TRANSPARENT);
+        		dc.drawText(dc.getWidth()/2 + 5, 122, geo_small, Sys.getDeviceSettings().notificationCount + " mensajes", Gfx.TEXT_JUSTIFY_LEFT);
+			}
+			else if (showNotifications && Sys.getDeviceSettings().notificationCount == 1) {
+				dc.setColor(Gfx.COLOR_YELLOW,Gfx.COLOR_TRANSPARENT);
+        		dc.drawText(dc.getWidth()/2 + 5, 122, geo_small, Sys.getDeviceSettings().notificationCount + " mensaje", Gfx.TEXT_JUSTIFY_LEFT);
+			} 
+			else if (showNotifications && Sys.getDeviceSettings().notificationCount > 1) {
+				dc.setColor(Gfx.COLOR_YELLOW,Gfx.COLOR_TRANSPARENT);
+        		dc.drawText(dc.getWidth()/2 + 5, 122, geo_small, Sys.getDeviceSettings().notificationCount + " mensajes", Gfx.TEXT_JUSTIFY_LEFT);
+			}			 
+        }
+
+		//Logo de Triboost
+		
+		logo = Ui.loadResource(Rez.Drawables.triboost);
+		dc.drawBitmap(dc.getWidth()/10 - 5, 130, logo);
+    
+    	
+   		
+   		
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
+    
     function onHide() {
     }
-
-    // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
     }
-
-    // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
     }
     
-    
+    //Draw an envelope as symbol for phone notifications.
+    function drawNotificationSymbol(dc, x, y) {
+    	dc.drawRectangle(x,y-10,15,10);
+    	dc.drawLine(x,y-10,x+8,y-2);
+    	dc.drawLine(x+7,y-2,x+15,y-10);
+   	}
 
 }

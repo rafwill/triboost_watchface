@@ -6,13 +6,14 @@ Connect IQ Watchface for Triboost Triathlon Club is a watchface for Garmin smart
 
 # Features!
 
-  - Steps
-  - Altitude
   - Battery porcentage
+  - Altitude
+  - Diary Steps
   - Connectivity Phone
+  - Notifications
   - Triboost logo!!!
 
-The project is not finished so please be patient and soon you can enjoy with your Triboost watchface.
+This watchface is the first version, so if you have problems with it, please contact with me and be patient my friend ;)
 
 For now you can see our Triboost homepage, and you can become a [TRIBOOSTER](https://www.triboost.club/)!!!!
 
