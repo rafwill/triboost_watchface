@@ -14,6 +14,6 @@ Connect IQ Watchface for Triboost Triathlon Club is a watchface for Garmin smart
 
 The project is not finished so please be patient and soon you can enjoy with your Triboost watchface.
 
-For now you can see our Triboost homepage an become a [TRIBOOSTER](http://https://www.triboost.club/)!!!!
+For now you can see our Triboost homepage an become a [TRIBOOSTER](https://www.triboost.club/)!!!!
 
-![Triboost Watchface](../images/triboost1.0.PNG)
+![Triboost Watchface](/images/triboost1.0.PNG)
