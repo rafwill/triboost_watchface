@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="3" lineNum="25" pc="268435456" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="3" lineNum="26" pc="268435460" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="3" lineNum="27" pc="268435503" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="3" lineNum="28" pc="268435546" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="3" lineNum="29" pc="268435589" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="35" pc="268435633" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="36" pc="268435637" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="37" pc="268435662" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="38" pc="268435687" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="41" pc="268435690" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="42" pc="268435716" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="44" pc="268435742" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="45" pc="268435755" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="46" pc="268435787" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="47" pc="268435819" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="48" pc="268435863" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="50" pc="268435907" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="51" pc="268435943" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="54" pc="268435955" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="55" pc="268435962" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="56" pc="268435979" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="57" pc="268436003" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="58" pc="268436028" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="59" pc="268436038" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="60" pc="268436049" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="63" pc="268436062" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="64" pc="268436075" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="68" pc="268436133" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="69" pc="268436169" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="70" pc="268436231" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="71" pc="268436267" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="74" pc="268436329" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="75" pc="268436373" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="85" pc="268436449" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="86" pc="268436485" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="89" pc="268436541" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="90" pc="268436558" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="91" pc="268436568" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="94" pc="268436578" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="96" pc="268436595" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="99" pc="268436611" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="103" pc="268436642" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="104" pc="268436678" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="108" pc="268436740" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="109" pc="268436772" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="112" pc="268436785" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="113" pc="268436821" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="117" pc="268436889" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="118" pc="268436892" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="119" pc="268436895" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="120" pc="268436921" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="121" pc="268436958" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="122" pc="268436990" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="123" pc="268437008" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="126" pc="268437018" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="127" pc="268437056" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="128" pc="268437074" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="131" pc="268437084" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="132" pc="268437091" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="136" pc="268437098" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="137" pc="268437134" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="144" pc="268437196" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="145" pc="268437219" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="146" pc="268437222" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="147" pc="268437230" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="148" pc="268437237" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="149" pc="268437273" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="153" pc="268437338" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="154" pc="268437345" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="155" pc="268437381" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="161" pc="268437443" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="162" pc="268437479" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="176" pc="268437505" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="177" pc="268437526" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="178" pc="268437570" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="179" pc="268437606" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="181" pc="268437696" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="182" pc="268437740" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="183" pc="268437776" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="185" pc="268437866" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="186" pc="268437910" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="187" pc="268437946" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="193" pc="268438039" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="4" lineNum="194" pc="268438076" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="5" lineNum="202" pc="268438119" symbol="onHide"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="6" lineNum="204" pc="268438124" symbol="onExitSleep"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="7" lineNum="206" pc="268438129" symbol="onEnterSleep"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="8" lineNum="210" pc="268438134" symbol="drawNotificationSymbol"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="8" lineNum="211" pc="268438138" symbol="drawNotificationSymbol"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="8" lineNum="212" pc="268438170" symbol="drawNotificationSymbol"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView.mc" id="8" lineNum="213" pc="268438208" symbol="drawNotificationSymbol"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="10" lineNum="6" pc="268438256" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="10" lineNum="7" pc="268438260" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="11" lineNum="11" pc="268438279" symbol="onStart"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="12" lineNum="15" pc="268438284" symbol="onStop"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="13" lineNum="19" pc="268438289" symbol="getInitialView"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="13" lineNum="20" pc="268438293" symbol="getInitialView"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="14" lineNum="24" pc="268438331" symbol="onSettingsChanged"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestApp.mc" id="14" lineNum="25" pc="268438335" symbol="onSettingsChanged"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestBackground.mc" id="16" lineNum="7" pc="268438352" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestBackground.mc" id="16" lineNum="8" pc="268438356" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestBackground.mc" id="16" lineNum="12" pc="268438377" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestBackground.mc" id="17" lineNum="15" pc="268438398" symbol="draw"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestBackground.mc" id="17" lineNum="17" pc="268438402" symbol="draw"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestBackground.mc" id="17" lineNum="18" pc="268438455" symbol="draw"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="19" lineNum="18" pc="268438468" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="19" lineNum="19" pc="268438472" symbol="initialize"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="20" lineNum="23" pc="268438491" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="20" lineNum="24" pc="268438495" symbol="onLayout"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="21" lineNum="30" pc="268438533" symbol="onShow"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="34" pc="268438538" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="39" pc="268438542" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="40" pc="268438549" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="41" pc="268438566" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="42" pc="268438576" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="43" pc="268438601" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="44" pc="268438611" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="45" pc="268438622" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="48" pc="268438635" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="49" pc="268438648" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="50" pc="268438706" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="51" pc="268438730" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="55" pc="268438754" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="56" pc="268438798" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="64" pc="268438874" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="67" pc="268438892" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="68" pc="268438909" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="69" pc="268438919" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="75" pc="268438929" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="77" pc="268438946" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="80" pc="268438962" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="82" pc="268438993" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="86" pc="268439017" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="88" pc="268439049" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="93" pc="268439079" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="94" pc="268439082" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="95" pc="268439085" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="96" pc="268439111" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="97" pc="268439148" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="98" pc="268439180" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="99" pc="268439198" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="102" pc="268439208" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="103" pc="268439246" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="104" pc="268439264" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="107" pc="268439274" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="108" pc="268439281" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="109" pc="268439288" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="116" pc="268439312" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="117" pc="268439336" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="118" pc="268439377" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="120" pc="268439391" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="121" pc="268439415" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="123" pc="268439429" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="124" pc="268439453" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="126" pc="268439467" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="127" pc="268439491" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="129" pc="268439505" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="130" pc="268439529" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="132" pc="268439543" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="133" pc="268439567" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="138" pc="268439581" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="139" pc="268439604" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="140" pc="268439607" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="141" pc="268439615" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="142" pc="268439622" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="143" pc="268439646" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="144" pc="268439660" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="147" pc="268439687" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="148" pc="268439694" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="149" pc="268439718" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="150" pc="268439732" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="22" lineNum="159" pc="268439756" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="23" lineNum="165" pc="268439777" symbol="onHide"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="24" lineNum="169" pc="268439782" symbol="onExitSleep"/>
+<entry filename="C:\\Users\\rfernandezs\\git\\triboost_watchface\\source\\TestView_original.mc" id="25" lineNum="173" pc="268439787" symbol="onEnterSleep"/>
+<entry filename="Rez" id="31" lineNum="20" pc="268439792" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="21" pc="268439804" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="22" pc="268439845" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="24" pc="268439886" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="26" pc="268439899" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="27" pc="268440011" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="28" pc="268440048" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="29" pc="268440181" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="30" pc="268440307" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="31" pc="268440433" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="32" pc="268440559" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="33" pc="268440685" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="34" pc="268440811" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="35" pc="268440937" symbol="WatchFace"/>
+<entry filename="Rez" id="31" lineNum="37" pc="268441063" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="18" symbol="custom"/>
+<entry id="11" object="true" symbol="TestView_original"/>
+<entry field="true" id="21" symbol="ColorBlue"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="28" symbol="ColorWhite"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="27" symbol="ColorBlack"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="22" symbol="ColorRed"/>
+<entry id="10" object="true" symbol="TestApp"/>
+<entry id="32" method="true" symbol="drawNotificationSymbol"/>
+<entry field="true" id="23" symbol="ForegroundColorTitle"/>
+<entry field="true" id="30" symbol="mirrored"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="29" symbol="AppName"/>
+<entry field="true" id="8389543" symbol="phoneConnected"/>
+<entry field="true" id="14" symbol="triboost"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry field="true" id="15" symbol="LauncherIcon"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="9" object="true" symbol="TestView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="25" symbol="ColorDarkGray"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="31" symbol="showNotifications"/>
+<entry id="8389348" symbol="font"/>
+<entry field="true" id="20" symbol="ColorLightGray"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="24" symbol="BackgroundColorTitle"/>
+<entry field="true" id="16" symbol="geo_small"/>
+<entry id="12" module="true" symbol="Layouts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="26" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="17" symbol="geo_number_small"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="13" module="true" symbol="Menus"/>
+<entry field="true" id="19" symbol="calibri_numbers"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435633" name="dc" stackId="1" startPc="268435456"/>
+<entry endPc="268438118" name="timeFormat" stackId="11" startPc="268435637"/>
+<entry endPc="268438118" name="stepsGoal" stackId="19" startPc="268435637"/>
+<entry endPc="268438118" name="activity" stackId="18" startPc="268435637"/>
+<entry endPc="268438118" name="xDate" stackId="8" startPc="268435637"/>
+<entry endPc="268438118" name="batx" stackId="23" startPc="268435637"/>
+<entry endPc="268438118" name="logo" stackId="4" startPc="268435637"/>
+<entry endPc="268438118" name="displayHeight" stackId="2" startPc="268435637"/>
+<entry endPc="268438118" name="batt" stackId="22" startPc="268435637"/>
+<entry endPc="268438118" name="phone" stackId="27" startPc="268435637"/>
+<entry endPc="268438118" name="displayWidth" stackId="3" startPc="268435637"/>
+<entry endPc="268438118" name="hour" stackId="13" startPc="268435637"/>
+<entry endPc="268438118" name="strmin" stackId="15" startPc="268435637"/>
+<entry endPc="268438118" name="altitude" stackId="26" startPc="268435637"/>
+<entry endPc="268438118" name="alignDate" stackId="10" startPc="268435637"/>
+<entry endPc="268438118" name="strhour" stackId="14" startPc="268435637"/>
+<entry endPc="268438118" name="stepString" stackId="21" startPc="268435637"/>
+<entry endPc="268438118" name="H2P2" stackId="25" startPc="268435637"/>
+<entry endPc="268438118" name="clockTime" stackId="12" startPc="268435637"/>
+<entry endPc="268438118" name="xTime" stackId="7" startPc="268435637"/>
+<entry endPc="268438118" name="xLine" stackId="6" startPc="268435637"/>
+<entry endPc="268438118" name="stepsLive" stackId="20" startPc="268435637"/>
+<entry endPc="268438118" name="alignTime" stackId="9" startPc="268435637"/>
+<entry endPc="268438118" name="today" stackId="16" startPc="268435637"/>
+<entry endPc="268438118" name="dateString" stackId="17" startPc="268435637"/>
+<entry endPc="268438118" name="connected" stackId="28" startPc="268435637"/>
+<entry endPc="268438118" name="xOffset" stackId="5" startPc="268435637"/>
+<entry endPc="268438118" name="H1P2" stackId="24" startPc="268435637"/>
+<entry endPc="268438119" name="dc" stackId="1" startPc="268435633"/>
+<entry endPc="268438253" name="x" stackId="2" startPc="268438134"/>
+<entry endPc="268438253" name="dc" stackId="1" startPc="268438134"/>
+<entry endPc="268438253" name="y" stackId="3" startPc="268438134"/>
+<entry endPc="268438284" name="state" stackId="1" startPc="268438279"/>
+<entry endPc="268438289" name="state" stackId="1" startPc="268438284"/>
+<entry endPc="268438397" name="dictionary" stackId="1" startPc="268438356"/>
+<entry endPc="268438468" name="dc" stackId="1" startPc="268438398"/>
+<entry endPc="268438533" name="dc" stackId="1" startPc="268438491"/>
+<entry endPc="268439776" name="timeFormat" stackId="2" startPc="268438542"/>
+<entry endPc="268439776" name="stepsGoal" stackId="10" startPc="268438542"/>
+<entry endPc="268439776" name="activity" stackId="9" startPc="268438542"/>
+<entry endPc="268439776" name="batt" stackId="13" startPc="268438542"/>
+<entry endPc="268439776" name="phone" stackId="18" startPc="268438542"/>
+<entry endPc="268439776" name="hour" stackId="4" startPc="268438542"/>
+<entry endPc="268439776" name="strmin" stackId="6" startPc="268438542"/>
+<entry endPc="268439776" name="altitude" stackId="16" startPc="268438542"/>
+<entry endPc="268439776" name="strhour" stackId="5" startPc="268438542"/>
+<entry endPc="268439776" name="stepString" stackId="12" startPc="268438542"/>
+<entry endPc="268439776" name="view" stackId="17" startPc="268438542"/>
+<entry endPc="268439776" name="clockTime" stackId="3" startPc="268438542"/>
+<entry endPc="268439776" name="H2P2" stackId="15" startPc="268438542"/>
+<entry endPc="268439776" name="stepsLive" stackId="11" startPc="268438542"/>
+<entry endPc="268439776" name="today" stackId="7" startPc="268438542"/>
+<entry endPc="268439776" name="dateString" stackId="8" startPc="268438542"/>
+<entry endPc="268439776" name="connected" stackId="19" startPc="268438542"/>
+<entry endPc="268439776" name="H1P2" stackId="14" startPc="268438542"/>
+<entry endPc="268439777" name="dc" stackId="1" startPc="268438538"/>
+<entry endPc="268441160" name="rez_cmp_local_text_notphone" stackId="13" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_var_dc_getWidth" stackId="4" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_bitmap_triboost" stackId="5" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_Min" stackId="8" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_Hour" stackId="7" startPc="268439804"/>
+<entry endPc="268441160" name="local_Rez_Fonts_calibri_numbers" stackId="3" startPc="268439804"/>
+<entry endPc="268441160" name="local_Rez_Fonts_geo_small" stackId="2" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_battery" stackId="11" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_phone" stackId="12" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_StepLabel" stackId="9" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_DateString" stackId="6" startPc="268439804"/>
+<entry endPc="268441160" name="rez_cmp_local_text_altitude" stackId="10" startPc="268439804"/>
+<entry endPc="268441161" name="dc" stackId="1" startPc="268439792"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="198" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry offset="253" parentId="globals" symbolId="TestApp" type="class"/>
+<dataEntry offset="332" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="411" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="458" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="489" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="552" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="591" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="622" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="733" parentId="globals" symbolId="TestView_original" type="class"/>
+<dataEntry offset="828" parentId="globals" symbolId="TestView" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="onLayout" parent="TestView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="TestView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="TestView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawNotificationSymbol" parent="TestView">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="TestApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="TestApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="TestApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="TestApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSettingsChanged" parent="TestApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="Background">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="Background">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="TestView_original">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="TestView_original">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="TestView_original">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="TestView_original">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="TestView_original">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="TestView_original">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="TestView_original">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="WatchFace" parent="Layouts">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

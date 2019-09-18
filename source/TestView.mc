@@ -53,7 +53,7 @@ class TestView extends Ui.WatchFace {
         // Get the current time and format it correctly
         var timeFormat = "$1$:$2$";
         var clockTime = Sys.getClockTime();
-        var hour = clockTime.hour;
+        var hour = clockTime.hour.format("%02d");
         if (!Sys.getDeviceSettings().is24Hour) {
         	hour = hour % 12;
         	if (hour == 0) {
@@ -62,8 +62,8 @@ class TestView extends Ui.WatchFace {
         }
         var strhour = hour.toString();
         var strmin = Lang.format("$1$", [clockTime.min.format("%02d")]);
-        Sys.println("Hora:" + strhour);
-        Sys.println("Min:" + strmin);
+        //Sys.println("Hora:" + strhour);
+        //Sys.println("Min:" + strmin);
         
         dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(dc.getWidth()/2 - 5, 23, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
@@ -80,7 +80,7 @@ class TestView extends Ui.WatchFace {
 		        today.month
 		    ]
 		);
-		Sys.println(dateString); 
+		//Sys.println(dateString); 
 		
 		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(dc.getWidth()/2, 10, geo_small, dateString, Gfx.TEXT_JUSTIFY_CENTER);
@@ -98,7 +98,7 @@ class TestView extends Ui.WatchFace {
         }
         var stepString = stepsLive.toString() + "/" + stepsGoal.toString( );
 		
-		Sys.println("Pasos:" + stepString);
+		//Sys.println("Pasos:" + stepString);
 		
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(dc.getWidth()/2 + 5, 82, geo_small, stepString, Gfx.TEXT_JUSTIFY_LEFT);
@@ -107,7 +107,7 @@ class TestView extends Ui.WatchFace {
 		//Get Battery
         var batt = Sys.getSystemStats().battery.toString();
         var batx = batt.toNumber();
-        Sys.println("Porcentaje de bateria:"+ batx + "%");
+        //Sys.println("Porcentaje de bateria:"+ batx + "%");
         
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(dc.getWidth()/2 + 5, 42, geo_small, batx + "%", Gfx.TEXT_JUSTIFY_LEFT);
@@ -130,7 +130,7 @@ class TestView extends Ui.WatchFace {
 		}
 		else{H1P2 = "No data";}
 		var altitude = H1P2 + H2P2;
-		Sys.println("Altitud:" + altitude);
+		//Sys.println("Altitud:" + altitude);
 		
 		
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
@@ -147,13 +147,13 @@ class TestView extends Ui.WatchFace {
 			connected = "Conectado";
 			dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
 			dc.drawText(dc.getWidth()/2 + 5, 102, geo_small, connected, Gfx.TEXT_JUSTIFY_LEFT);
-			Sys.println("Telefono " + connected);
+			//Sys.println("Telefono " + connected);
 		}
 		else {
 			connected = "Conectado";
 			dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 			dc.drawText(dc.getWidth()/2 + 5, 102, geo_small, connected, Gfx.TEXT_JUSTIFY_LEFT);
-			Sys.println("Telefono no " + connected);
+			//Sys.println("Telefono no " + connected);
 		}
         
         //Fancy Line
