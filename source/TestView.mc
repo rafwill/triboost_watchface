@@ -82,7 +82,7 @@ class TestView extends Ui.WatchFace {
 		);
 		//Sys.println(dateString); 
 		
-		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(dc.getWidth()/2, 10, geo_small, dateString, Gfx.TEXT_JUSTIFY_CENTER);
         
         // Get steps, update the field
