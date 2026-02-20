@@ -60,11 +60,31 @@ class TestView extends Ui.WatchFace {
     // Dibuja en targetDc los elementos que cambian como mucho cada minuto:
     // fecha, bateria, altitud, pasos, conexion, notificaciones, linea, arcos, logo.
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
-    function _drawStaticLayer(targetDc, cx, xRight,
-            yDate, yBat, yAlt, ySteps, yPhone, yNotif,
-            lineTop, lineBot, arcRadius, arcCY, arcBatX, arcStepX,
-            dateString, batPct, batColor, batStr, altStr,
-            steps, stepsGoal, stepsPct, stepsColor) {
+    function _drawStaticLayer(targetDc, layout, data) {
+        var cx        = layout[:cx];
+        var xRight    = layout[:xRight];
+        var yDate     = layout[:yDate];
+        var yBat      = layout[:yBat];
+        var yAlt      = layout[:yAlt];
+        var ySteps    = layout[:ySteps];
+        var yPhone    = layout[:yPhone];
+        var yNotif    = layout[:yNotif];
+        var lineTop   = layout[:lineTop];
+        var lineBot   = layout[:lineBot];
+        var arcRadius = layout[:arcRadius];
+        var arcCY     = layout[:arcCY];
+        var arcBatX   = layout[:arcBatX];
+        var arcStepX  = layout[:arcStepX];
+
+        var dateString = data[:dateString];
+        var batPct     = data[:batPct];
+        var batColor   = data[:batColor];
+        var batStr     = data[:batStr];
+        var altStr     = data[:altStr];
+        var steps      = data[:steps];
+        var stepsGoal  = data[:stepsGoal];
+        var stepsPct   = data[:stepsPct];
+        var stepsColor = data[:stepsColor];
 
         targetDc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
         targetDc.clear();
@@ -254,11 +274,20 @@ class TestView extends Ui.WatchFace {
             _bufferDirty = false;
             // Si hay buffer: dibujar en el buffer. Si no: dibujar directamente en dc.
             var targetDc = (_bgBuffer != null) ? _bgBuffer.getDc() : dc;
-            _drawStaticLayer(targetDc, cx, xRight,
-                yDate, yBat, yAlt, ySteps, yPhone, yNotif,
-                lineTop, lineBot, arcRadius, arcCY, arcBatX, arcStepX,
-                dateString, batPct, batColor, batStr, altStr,
-                steps, stepsGoal, stepsPct, stepsColor);
+            var staticLayout = {
+                :cx => cx, :xRight => xRight,
+                :yDate => yDate, :yBat => yBat, :yAlt => yAlt, :ySteps => ySteps,
+                :yPhone => yPhone, :yNotif => yNotif,
+                :lineTop => lineTop, :lineBot => lineBot,
+                :arcRadius => arcRadius, :arcCY => arcCY, :arcBatX => arcBatX, :arcStepX => arcStepX
+            };
+            var staticData = {
+                :dateString => dateString,
+                :batPct => batPct, :batColor => batColor, :batStr => batStr,
+                :altStr => altStr,
+                :steps => steps, :stepsGoal => stepsGoal, :stepsPct => stepsPct, :stepsColor => stepsColor
+            };
+            _drawStaticLayer(targetDc, staticLayout, staticData);
         }
 
         // ── Blitear buffer a pantalla (si existe) ─────────────────────────────

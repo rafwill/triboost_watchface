@@ -113,42 +113,63 @@ class TestView_original extends WatchUi.WatchFace {
 		
         // Update the view
         
-        var view = View.findDrawableById("DateString");
-        view.setColor(Application.getApp().getProperty("ForegroundColor"));
-        view.setText(dateString);
+        var foregroundColor = Application.Properties.getValue("ForegroundColor");
+        if (foregroundColor == null) {
+            foregroundColor = Graphics.COLOR_WHITE;
+        }
+
+        var dateView = View.findDrawableById("DateString") as WatchUi.Text;
+        if (dateView != null) {
+            dateView.setColor(foregroundColor);
+            dateView.setText(dateString);
+        }
         
-        view = View.findDrawableById("Hour");
-        view.setText(strhour);
+        var hourView = View.findDrawableById("Hour") as WatchUi.Text;
+        if (hourView != null) {
+            hourView.setText(strhour);
+        }
         
-        view = View.findDrawableById("Min");
-        view.setText(strmin);
+        var minView = View.findDrawableById("Min") as WatchUi.Text;
+        if (minView != null) {
+            minView.setText(strmin);
+        }
         
-        view = View.findDrawableById("StepLabel");
-        view.setText(stepString);
+        var stepView = View.findDrawableById("StepLabel") as WatchUi.Text;
+        if (stepView != null) {
+            stepView.setText(stepString);
+        }
         
-        view = View.findDrawableById("altitude");
-        view.setText(altitude);
+        var altitudeView = View.findDrawableById("altitude") as WatchUi.Text;
+        if (altitudeView != null) {
+            altitudeView.setText(altitude);
+        }
         
-        view = View.findDrawableById("battery");
-        view.setText(batt);
+        var batteryView = View.findDrawableById("battery") as WatchUi.Text;
+        if (batteryView != null) {
+            batteryView.setText(batt);
+        }
         
         
        //Get Phone Conected
-		
-		var phone = System.getDeviceSettings().phoneConnected;
-		var connected = null;
-		if (phone == true) {
-			connected = "connected";
-			view = View.findDrawableById("phone");
-        	view.setText(connected);
-        	System.println("connected:" + connected);
-		}
-		else {
-			connected = "connected";
-			view = View.findDrawableById("notphone");
-        	view.setText(connected);
-        	System.println("notconnected:" + connected);
-		}
+        
+        var phone = System.getDeviceSettings().phoneConnected;
+        var connected = null;
+        if (phone == true) {
+            connected = "connected";
+            var phoneView = View.findDrawableById("phone") as WatchUi.Text;
+            if (phoneView != null) {
+                phoneView.setText(connected);
+            }
+            System.println("connected:" + connected);
+        }
+        else {
+            connected = "connected";
+            var notPhoneView = View.findDrawableById("notphone") as WatchUi.Text;
+            if (notPhoneView != null) {
+                notPhoneView.setText(connected);
+            }
+            System.println("notconnected:" + connected);
+        }
         
         
         //dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);

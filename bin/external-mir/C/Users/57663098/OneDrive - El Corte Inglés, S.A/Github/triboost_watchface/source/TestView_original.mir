@@ -1,0 +1,903 @@
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Application,5,13,24]; ]
+using Toybox.Application;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Activity,6,13,21]; ]
+using Toybox.Activity;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [ActivityMonitor,7,13,28]; ]
+using Toybox.ActivityMonitor;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [Time,8,13,17]; ]
+using Toybox.Time;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 9; @symbol_usingdef<0> = [Toybox,9,6,12]; @symbol_usingdef<1> = [Time,9,13,17]; @symbol_usingdef<2> = [Gregorian,9,18,27]; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 13; @symbol_classdef = [TestView_original,13,6,23]; @symbol_extends<0> = [WatchUi,13,32,39]; @symbol_extends<1> = [WatchFace,13,40,49]; ]
+class TestView_original extends WatchUi.WatchFace {
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 13; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 18; @symbol_functiondef = [initialize,18,13,23]; ]
+    function initialize() as Void {
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_18_26_20_4_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 19 8 ]
+        symbol [ WatchFace %tmp.2 19 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 19 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_18_26_20_4_stop:
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 23; @symbol_functiondef = [onLayout,23,13,21]; @symbol_param<0> = [dc,23,22,24]; ]
+    function onLayout(dc) {
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_23_26_25_4_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 24 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 24 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 24 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 24 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 24 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 24 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_23_26_25_4_stop:
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 30; @symbol_functiondef = [onShow,30,13,19]; ]
+    function onShow() {
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 34; @symbol_functiondef = [onUpdate,34,13,21]; @symbol_param<0> = [dc,34,22,24]; ]
+    function onUpdate(dc) {
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 39 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %timeFormat.1 = local;
+        symbol [ timeFormat %timeFormat.1 39 12 22 ];
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+        symbol [ timeFormat %timeFormat.1 39 12 22 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 40 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %clockTime.2 = local;
+        symbol [ clockTime %clockTime.2 40 12 21 ];
+        symbol [ System %tmp.2 40 24 30 ];
+        %tmp.2 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.3 40 31 43 ];
+        %tmp.3 = getv function %tmp.2 :getClockTime;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %clockTime.2 %tmp.4;
+        symbol [ clockTime %clockTime.2 40 12 21 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 41 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %hour.3 = local;
+        symbol [ hour %hour.3 41 12 16 ];
+        %tmp.5 = lgetv %clockTime.2;
+        symbol [ clockTime %tmp.5 41 19 28 ];
+        symbol [ hour %tmp.6 41 29 33 ];
+        %tmp.6 = getv %tmp.5 :hour;
+        lputv %hour.3 %tmp.6;
+        symbol [ hour %hour.3 41 12 16 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 42 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_8_47_8_if_stmt:
+        symbol [ System %tmp.7 42 13 19 ];
+        %tmp.7 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.8 42 20 37 ];
+        %tmp.8 = getv function %tmp.7 :getDeviceSettings;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ is24Hour %tmp.10 42 40 48 ];
+        %tmp.10 = getv %tmp.9 :is24Hour;
+        %tmp.11 = not %tmp.10;
+        bf %tmp.11 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_8_47_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_8_47_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_50_47_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 43 9 ]
+        %tmp.12 = lgetv %hour.3;
+        symbol [ hour %tmp.12 43 16 20 ];
+        %tmp.13 = 12;
+        %tmp.14 = mod %tmp.12 %tmp.13;
+        lputv %hour.3 %tmp.14;
+        symbol [ hour %hour.3 43 9 13 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 44 9 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_9_46_9_if_stmt:
+        %tmp.15 = lgetv %hour.3;
+        symbol [ hour %tmp.15 44 13 17 ];
+        %tmp.16 = 0;
+        %tmp.17 = eq %tmp.15 %tmp.16;
+        bf %tmp.17 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_9_46_9_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_9_46_9_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_24_46_9_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 45 10 ]
+        %tmp.18 = 12;
+        lputv %hour.3 %tmp.18;
+        symbol [ hour %hour.3 45 10 14 ];
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_24_46_9_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_9_46_9_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_44_9_46_9_if_end:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_50_47_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_8_47_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_42_8_47_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 48 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %strhour.4 = local;
+        symbol [ strhour %strhour.4 48 12 19 ];
+        %tmp.19 = lgetv %hour.3;
+        symbol [ hour %tmp.19 48 22 26 ];
+        symbol [ toString %tmp.20 48 27 35 ];
+        %tmp.20 = getv function %tmp.19 :toString;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        lputv %strhour.4 %tmp.21;
+        symbol [ strhour %strhour.4 48 12 19 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 49 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %strmin.5 = local;
+        symbol [ strmin %strmin.5 49 12 18 ];
+        symbol [ Lang %tmp.22 49 21 25 ];
+        %tmp.22 = getm $.Toybox.Lang;
+        symbol [ format %tmp.23 49 26 32 ];
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "$1$";
+        %tmp.25 = newa 1;
+        %tmp.26 = lgetv %clockTime.2;
+        symbol [ clockTime %tmp.26 49 41 50 ];
+        symbol [ min %tmp.27 49 51 54 ];
+        %tmp.27 = getv %tmp.26 :min;
+        symbol [ format %tmp.28 49 55 61 ];
+        %tmp.28 = getv function %tmp.27 :format;
+        %tmp.29 = "%02d";
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        %tmp.31 = dup %tmp.25;
+        %tmp.32 = aputv %tmp.31 0 %tmp.30;
+        %tmp.33 = invoke %tmp.22 %tmp.23(%tmp.24, %tmp.32);
+        lputv %strmin.5 %tmp.33;
+        symbol [ strmin %strmin.5 49 12 18 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 50 8 ]
+        symbol [ System %tmp.34 50 8 14 ];
+        %tmp.34 = getm $.Toybox.System;
+        symbol [ println %tmp.35 50 15 22 ];
+        %tmp.35 = getv function %tmp.34 :println;
+        %tmp.36 = "Hora:";
+        %tmp.37 = lgetv %strhour.4;
+        symbol [ strhour %tmp.37 50 33 40 ];
+        %tmp.38 = add %tmp.36 %tmp.37;
+        invoke %tmp.34 %tmp.35(%tmp.38);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 51 8 ]
+        symbol [ System %tmp.39 51 8 14 ];
+        %tmp.39 = getm $.Toybox.System;
+        symbol [ println %tmp.40 51 15 22 ];
+        %tmp.40 = getv function %tmp.39 :println;
+        %tmp.41 = "Min:";
+        %tmp.42 = lgetv %strmin.5;
+        symbol [ strmin %tmp.42 51 32 38 ];
+        %tmp.43 = add %tmp.41 %tmp.42;
+        invoke %tmp.39 %tmp.40(%tmp.43);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 55 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %today.6 = local;
+        symbol [ today %today.6 55 12 17 ];
+        symbol [ Gregorian %tmp.44 55 20 29 ];
+        %tmp.44 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.45 55 30 34 ];
+        %tmp.45 = getv function %tmp.44 :info;
+        symbol [ Time %tmp.46 55 35 39 ];
+        %tmp.46 = getm $.Toybox.Time;
+        symbol [ now %tmp.47 55 40 43 ];
+        %tmp.47 = getv function %tmp.46 :now;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        symbol [ Time %tmp.49 55 47 51 ];
+        %tmp.49 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.50 55 52 65 ];
+        %tmp.50 = getv %tmp.49 :FORMAT_MEDIUM;
+        %tmp.51 = invoke %tmp.44 %tmp.45(%tmp.48, %tmp.50);
+        lputv %today.6 %tmp.51;
+        symbol [ today %today.6 55 12 17 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 56 2 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %dateString.7 = local;
+        symbol [ dateString %dateString.7 56 6 16 ];
+        symbol [ Lang %tmp.52 56 19 23 ];
+        %tmp.52 = getm $.Toybox.Lang;
+        symbol [ format %tmp.53 56 24 30 ];
+        %tmp.53 = getv function %tmp.52 :format;
+        %tmp.54 = "$1$ $2$ $3$";
+        %tmp.55 = newa 3;
+        %tmp.56 = lgetv %today.6;
+        symbol [ today %tmp.56 59 10 15 ];
+        symbol [ day_of_week %tmp.57 59 16 27 ];
+        %tmp.57 = getv %tmp.56 :day_of_week;
+        %tmp.58 = dup %tmp.55;
+        %tmp.59 = aputv %tmp.58 0 %tmp.57;
+        %tmp.60 = lgetv %today.6;
+        symbol [ today %tmp.60 60 10 15 ];
+        symbol [ day %tmp.61 60 16 19 ];
+        %tmp.61 = getv %tmp.60 :day;
+        %tmp.62 = dup %tmp.59;
+        %tmp.63 = aputv %tmp.62 1 %tmp.61;
+        %tmp.64 = lgetv %today.6;
+        symbol [ today %tmp.64 61 10 15 ];
+        symbol [ month %tmp.65 61 16 21 ];
+        %tmp.65 = getv %tmp.64 :month;
+        %tmp.66 = dup %tmp.63;
+        %tmp.67 = aputv %tmp.66 2 %tmp.65;
+        %tmp.68 = invoke %tmp.52 %tmp.53(%tmp.54, %tmp.67);
+        lputv %dateString.7 %tmp.68;
+        symbol [ dateString %dateString.7 56 6 16 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 64 2 ]
+        symbol [ System %tmp.69 64 2 8 ];
+        %tmp.69 = getm $.Toybox.System;
+        symbol [ println %tmp.70 64 9 16 ];
+        %tmp.70 = getv function %tmp.69 :println;
+        %tmp.71 = lgetv %dateString.7;
+        symbol [ dateString %tmp.71 64 17 27 ];
+        invoke %tmp.69 %tmp.70(%tmp.71);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 67 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %activity.8 = local;
+        symbol [ activity %activity.8 67 12 20 ];
+        symbol [ ActivityMonitor %tmp.72 67 23 38 ];
+        %tmp.72 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.73 67 39 46 ];
+        %tmp.73 = getv function %tmp.72 :getInfo;
+        %tmp.74 = invoke %tmp.72 %tmp.73();
+        lputv %activity.8 %tmp.74;
+        symbol [ activity %activity.8 67 12 20 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 68 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %stepsGoal.9 = local;
+        symbol [ stepsGoal %stepsGoal.9 68 12 21 ];
+        %tmp.75 = lgetv %activity.8;
+        symbol [ activity %tmp.75 68 24 32 ];
+        symbol [ stepGoal %tmp.76 68 33 41 ];
+        %tmp.76 = getv %tmp.75 :stepGoal;
+        lputv %stepsGoal.9 %tmp.76;
+        symbol [ stepsGoal %stepsGoal.9 68 12 21 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 69 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %stepsLive.10 = local;
+        symbol [ stepsLive %stepsLive.10 69 12 21 ];
+        %tmp.77 = lgetv %activity.8;
+        symbol [ activity %tmp.77 69 24 32 ];
+        symbol [ steps %tmp.78 69 33 38 ];
+        %tmp.78 = getv %tmp.77 :steps;
+        lputv %stepsLive.10 %tmp.78;
+        symbol [ stepsLive %stepsLive.10 69 12 21 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 75 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_8_79_8_if_stmt:
+        %tmp.79 = lgetv %activity.8;
+        symbol [ activity %tmp.79 75 12 20 ];
+        symbol [ stepGoal %tmp.80 75 21 29 ];
+        %tmp.80 = getv %tmp.79 :stepGoal;
+        %tmp.81 = 0;
+        %tmp.82 = eq %tmp.80 %tmp.81;
+        bf %tmp.82 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_8_79_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_8_79_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_37_79_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 77 12 ]
+        %tmp.83 = lgetv %activity.8;
+        symbol [ activity %tmp.83 77 12 20 ];
+        %tmp.84 = 5000;
+        symbol [ stepGoal ? 77 21 29 ];
+        putv %tmp.83 :stepGoal %tmp.84;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_37_79_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_8_79_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_75_8_79_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 80 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %stepString.11 = local;
+        symbol [ stepString %stepString.11 80 12 22 ];
+        %tmp.85 = lgetv %stepsLive.10;
+        symbol [ stepsLive %tmp.85 80 25 34 ];
+        symbol [ toString %tmp.86 80 35 43 ];
+        %tmp.86 = getv function %tmp.85 :toString;
+        %tmp.87 = invoke %tmp.85 %tmp.86();
+        %tmp.88 = "/";
+        %tmp.89 = add %tmp.87 %tmp.88;
+        %tmp.90 = lgetv %stepsGoal.9;
+        symbol [ stepsGoal %tmp.90 80 54 63 ];
+        symbol [ toString %tmp.91 80 64 72 ];
+        %tmp.91 = getv function %tmp.90 :toString;
+        %tmp.92 = invoke %tmp.90 %tmp.91();
+        %tmp.93 = add %tmp.89 %tmp.92;
+        lputv %stepString.11 %tmp.93;
+        symbol [ stepString %stepString.11 80 12 22 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 82 2 ]
+        symbol [ System %tmp.94 82 2 8 ];
+        %tmp.94 = getm $.Toybox.System;
+        symbol [ println %tmp.95 82 9 16 ];
+        %tmp.95 = getv function %tmp.94 :println;
+        %tmp.96 = "StepsString:";
+        %tmp.97 = lgetv %stepString.11;
+        symbol [ stepString %tmp.97 82 34 44 ];
+        %tmp.98 = add %tmp.96 %tmp.97;
+        invoke %tmp.94 %tmp.95(%tmp.98);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 86 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %batt.12 = local;
+        symbol [ batt %batt.12 86 12 16 ];
+        symbol [ System %tmp.99 86 19 25 ];
+        %tmp.99 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.100 86 26 40 ];
+        %tmp.100 = getv function %tmp.99 :getSystemStats;
+        %tmp.101 = invoke %tmp.99 %tmp.100();
+        symbol [ battery %tmp.102 86 43 50 ];
+        %tmp.102 = getv %tmp.101 :battery;
+        symbol [ toString %tmp.103 86 51 59 ];
+        %tmp.103 = getv function %tmp.102 :toString;
+        %tmp.104 = invoke %tmp.102 %tmp.103();
+        lputv %batt.12 %tmp.104;
+        symbol [ batt %batt.12 86 12 16 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 88 8 ]
+        symbol [ System %tmp.105 88 8 14 ];
+        %tmp.105 = getm $.Toybox.System;
+        symbol [ println %tmp.106 88 15 22 ];
+        %tmp.106 = getv function %tmp.105 :println;
+        %tmp.107 = "Batt:";
+        %tmp.108 = lgetv %batt.12;
+        symbol [ batt %tmp.108 88 32 36 ];
+        %tmp.109 = add %tmp.107 %tmp.108;
+        %tmp.110 = "%";
+        %tmp.111 = add %tmp.109 %tmp.110;
+        invoke %tmp.105 %tmp.106(%tmp.111);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 93 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %H1P2.13 = local;
+        symbol [ H1P2 %H1P2.13 93 12 16 ];
+        %tmp.112 = null;
+        lputv %H1P2.13 %tmp.112;
+        symbol [ H1P2 %H1P2.13 93 12 16 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 94 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %H2P2.14 = local;
+        symbol [ H2P2 %H2P2.14 94 12 16 ];
+        %tmp.113 = null;
+        lputv %H2P2.14 %tmp.113;
+        symbol [ H2P2 %H2P2.14 94 12 16 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 95 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_8_107_24_if_stmt:
+        symbol [ Activity %tmp.114 95 12 20 ];
+        %tmp.114 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.115 95 21 36 ];
+        %tmp.115 = getv function %tmp.114 :getActivityInfo;
+        %tmp.116 = invoke %tmp.114 %tmp.115();
+        symbol [ altitude %tmp.117 95 39 47 ];
+        %tmp.117 = getv %tmp.116 :altitude;
+        %tmp.118 = null;
+        %tmp.119 = ne %tmp.117 %tmp.118;
+        bf %tmp.119 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_8_107_24_if_else_false;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_8_107_24_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_58_106_2_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 96 3 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_3_105_3_if_stmt:
+        symbol [ System %tmp.120 96 6 12 ];
+        %tmp.120 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.121 96 13 30 ];
+        %tmp.121 = getv function %tmp.120 :getDeviceSettings;
+        %tmp.122 = invoke %tmp.120 %tmp.121();
+        symbol [ elevationUnits %tmp.123 96 33 47 ];
+        %tmp.123 = getv %tmp.122 :elevationUnits;
+        symbol [ System %tmp.124 96 51 57 ];
+        %tmp.124 = getm $.Toybox.System;
+        symbol [ UNIT_METRIC %tmp.125 96 58 69 ];
+        %tmp.125 = getv %tmp.124 :UNIT_METRIC;
+        %tmp.126 = eq %tmp.123 %tmp.125;
+        bf %tmp.126 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_3_105_3_if_else_false;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_3_105_3_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_70_100_3_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 97 3 ]
+        symbol [ Activity %tmp.127 97 10 18 ];
+        %tmp.127 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.128 97 19 34 ];
+        %tmp.128 = getv function %tmp.127 :getActivityInfo;
+        %tmp.129 = invoke %tmp.127 %tmp.128();
+        symbol [ altitude %tmp.130 97 37 45 ];
+        %tmp.130 = getv %tmp.129 :altitude;
+        symbol [ toFloat %tmp.131 97 46 53 ];
+        %tmp.131 = getv function %tmp.130 :toFloat;
+        %tmp.132 = invoke %tmp.130 %tmp.131();
+        lputv %H1P2.13 %tmp.132;
+        symbol [ H1P2 %H1P2.13 97 3 7 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 98 3 ]
+        %tmp.133 = lgetv %H1P2.13;
+        symbol [ H1P2 %tmp.133 98 10 14 ];
+        symbol [ format %tmp.134 98 15 21 ];
+        %tmp.134 = getv function %tmp.133 :format;
+        %tmp.135 = "%.0d";
+        %tmp.136 = invoke %tmp.133 %tmp.134(%tmp.135);
+        lputv %H1P2.13 %tmp.136;
+        symbol [ H1P2 %H1P2.13 98 3 7 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 99 3 ]
+        %tmp.137 = " m";
+        lputv %H2P2.14 %tmp.137;
+        symbol [ H2P2 %H2P2.14 99 3 7 ];
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_70_100_3_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_3_105_3_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_3_105_3_if_else_false:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_101_6_105_3_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 102 3 ]
+        symbol [ Activity %tmp.138 102 10 18 ];
+        %tmp.138 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.139 102 19 34 ];
+        %tmp.139 = getv function %tmp.138 :getActivityInfo;
+        %tmp.140 = invoke %tmp.138 %tmp.139();
+        symbol [ altitude %tmp.141 102 37 45 ];
+        %tmp.141 = getv %tmp.140 :altitude;
+        symbol [ toFloat %tmp.142 102 46 53 ];
+        %tmp.142 = getv function %tmp.141 :toFloat;
+        %tmp.143 = invoke %tmp.141 %tmp.142();
+        %tmp.144 = 3.2808399;
+        %tmp.145 = mul %tmp.143 %tmp.144;
+        lputv %H1P2.13 %tmp.145;
+        symbol [ H1P2 %H1P2.13 102 3 7 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 103 3 ]
+        %tmp.146 = lgetv %H1P2.13;
+        symbol [ H1P2 %tmp.146 103 10 14 ];
+        symbol [ format %tmp.147 103 15 21 ];
+        %tmp.147 = getv function %tmp.146 :format;
+        %tmp.148 = "%.0d";
+        %tmp.149 = invoke %tmp.146 %tmp.147(%tmp.148);
+        lputv %H1P2.13 %tmp.149;
+        symbol [ H1P2 %H1P2.13 103 3 7 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 104 3 ]
+        %tmp.150 = " ft";
+        lputv %H2P2.14 %tmp.150;
+        symbol [ H2P2 %H2P2.14 104 3 7 ];
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_101_6_105_3_stop:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_96_3_105_3_if_end:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_58_106_2_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_8_107_24_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_8_107_24_if_else_false:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_107_6_107_24_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 107 7 ]
+        %tmp.151 = "No data";
+        lputv %H1P2.13 %tmp.151;
+        symbol [ H1P2 %H1P2.13 107 7 11 ];
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_107_6_107_24_stop:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_95_8_107_24_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 108 2 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %altitude.15 = local;
+        symbol [ altitude %altitude.15 108 6 14 ];
+        %tmp.152 = lgetv %H1P2.13;
+        symbol [ H1P2 %tmp.152 108 17 21 ];
+        %tmp.153 = lgetv %H2P2.14;
+        symbol [ H2P2 %tmp.153 108 24 28 ];
+        %tmp.154 = add %tmp.152 %tmp.153;
+        lputv %altitude.15 %tmp.154;
+        symbol [ altitude %altitude.15 108 6 14 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 109 2 ]
+        symbol [ System %tmp.155 109 2 8 ];
+        %tmp.155 = getm $.Toybox.System;
+        symbol [ println %tmp.156 109 9 16 ];
+        %tmp.156 = getv function %tmp.155 :println;
+        %tmp.157 = "altitude:";
+        %tmp.158 = lgetv %altitude.15;
+        symbol [ altitude %tmp.158 109 31 39 ];
+        %tmp.159 = add %tmp.157 %tmp.158;
+        invoke %tmp.155 %tmp.156(%tmp.159);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 116 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %foregroundColor.16 = local;
+        symbol [ foregroundColor %foregroundColor.16 116 12 27 ];
+        symbol [ Application %tmp.160 116 30 41 ];
+        %tmp.160 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.161 116 42 52 ];
+        %tmp.161 = getv %tmp.160 :Properties;
+        symbol [ getValue %tmp.162 116 53 61 ];
+        %tmp.162 = getv function %tmp.161 :getValue;
+        %tmp.163 = "ForegroundColor";
+        %tmp.164 = invoke %tmp.161 %tmp.162(%tmp.163);
+        lputv %foregroundColor.16 %tmp.164;
+        symbol [ foregroundColor %foregroundColor.16 116 12 27 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 117 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_8_119_8_if_stmt:
+        %tmp.165 = lgetv %foregroundColor.16;
+        symbol [ foregroundColor %tmp.165 117 12 27 ];
+        %tmp.166 = null;
+        %tmp.167 = eq %tmp.165 %tmp.166;
+        bf %tmp.167 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_8_119_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_8_119_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_37_119_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 118 12 ]
+        symbol [ Graphics %tmp.168 118 30 38 ];
+        %tmp.168 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.169 118 39 50 ];
+        %tmp.169 = getv %tmp.168 :COLOR_WHITE;
+        lputv %foregroundColor.16 %tmp.169;
+        symbol [ foregroundColor %foregroundColor.16 118 12 27 ];
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_37_119_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_8_119_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_117_8_119_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 121 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %dateView.17 = local;
+        symbol [ dateView %dateView.17 121 12 20 ];
+        symbol [ View %tmp.171 121 23 27 ];
+        %tmp.171 = getv ? :View;
+        symbol [ findDrawableById %tmp.172 121 28 44 ];
+        %tmp.172 = getv function %tmp.171 :findDrawableById;
+        %tmp.173 = "DateString";
+        %tmp.174 = invoke %tmp.171 %tmp.172(%tmp.173);
+        %tmp.175 = as %tmp.174 WatchUi.Text;
+        symbol [ WatchUi %tmp.175 121 62 69 ];
+        symbol [ Text %tmp.175 121 70 74 ];
+        lputv %dateView.17 %tmp.175;
+        symbol [ dateView %dateView.17 121 12 20 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 122 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_8_125_8_if_stmt:
+        %tmp.176 = lgetv %dateView.17;
+        symbol [ dateView %tmp.176 122 12 20 ];
+        %tmp.177 = null;
+        %tmp.178 = ne %tmp.176 %tmp.177;
+        bf %tmp.178 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_8_125_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_8_125_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_30_125_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 123 12 ]
+        %tmp.179 = lgetv %dateView.17;
+        symbol [ dateView %tmp.179 123 12 20 ];
+        %tmp.180 = as %tmp.179 { (!Null) };
+        symbol [ setColor %tmp.181 123 21 29 ];
+        %tmp.181 = getv function %tmp.180 :setColor;
+        %tmp.182 = lgetv %foregroundColor.16;
+        symbol [ foregroundColor %tmp.182 123 30 45 ];
+        invoke %tmp.180 %tmp.181(%tmp.182);
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 124 12 ]
+        %tmp.183 = lgetv %dateView.17;
+        symbol [ dateView %tmp.183 124 12 20 ];
+        %tmp.184 = as %tmp.183 { (!Null) };
+        symbol [ setText %tmp.185 124 21 28 ];
+        %tmp.185 = getv function %tmp.184 :setText;
+        %tmp.186 = lgetv %dateString.7;
+        symbol [ dateString %tmp.186 124 29 39 ];
+        invoke %tmp.184 %tmp.185(%tmp.186);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_30_125_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_8_125_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_122_8_125_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 127 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %hourView.18 = local;
+        symbol [ hourView %hourView.18 127 12 20 ];
+        symbol [ View %tmp.188 127 23 27 ];
+        %tmp.188 = getv ? :View;
+        symbol [ findDrawableById %tmp.189 127 28 44 ];
+        %tmp.189 = getv function %tmp.188 :findDrawableById;
+        %tmp.190 = "Hour";
+        %tmp.191 = invoke %tmp.188 %tmp.189(%tmp.190);
+        %tmp.192 = as %tmp.191 WatchUi.Text;
+        symbol [ WatchUi %tmp.192 127 56 63 ];
+        symbol [ Text %tmp.192 127 64 68 ];
+        lputv %hourView.18 %tmp.192;
+        symbol [ hourView %hourView.18 127 12 20 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 128 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_8_130_8_if_stmt:
+        %tmp.193 = lgetv %hourView.18;
+        symbol [ hourView %tmp.193 128 12 20 ];
+        %tmp.194 = null;
+        %tmp.195 = ne %tmp.193 %tmp.194;
+        bf %tmp.195 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_8_130_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_8_130_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_30_130_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 129 12 ]
+        %tmp.196 = lgetv %hourView.18;
+        symbol [ hourView %tmp.196 129 12 20 ];
+        %tmp.197 = as %tmp.196 { (!Null) };
+        symbol [ setText %tmp.198 129 21 28 ];
+        %tmp.198 = getv function %tmp.197 :setText;
+        %tmp.199 = lgetv %strhour.4;
+        symbol [ strhour %tmp.199 129 29 36 ];
+        invoke %tmp.197 %tmp.198(%tmp.199);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_30_130_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_8_130_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_128_8_130_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 132 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %minView.19 = local;
+        symbol [ minView %minView.19 132 12 19 ];
+        symbol [ View %tmp.201 132 22 26 ];
+        %tmp.201 = getv ? :View;
+        symbol [ findDrawableById %tmp.202 132 27 43 ];
+        %tmp.202 = getv function %tmp.201 :findDrawableById;
+        %tmp.203 = "Min";
+        %tmp.204 = invoke %tmp.201 %tmp.202(%tmp.203);
+        %tmp.205 = as %tmp.204 WatchUi.Text;
+        symbol [ WatchUi %tmp.205 132 54 61 ];
+        symbol [ Text %tmp.205 132 62 66 ];
+        lputv %minView.19 %tmp.205;
+        symbol [ minView %minView.19 132 12 19 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 133 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_8_135_8_if_stmt:
+        %tmp.206 = lgetv %minView.19;
+        symbol [ minView %tmp.206 133 12 19 ];
+        %tmp.207 = null;
+        %tmp.208 = ne %tmp.206 %tmp.207;
+        bf %tmp.208 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_8_135_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_8_135_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_29_135_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 134 12 ]
+        %tmp.209 = lgetv %minView.19;
+        symbol [ minView %tmp.209 134 12 19 ];
+        %tmp.210 = as %tmp.209 { (!Null) };
+        symbol [ setText %tmp.211 134 20 27 ];
+        %tmp.211 = getv function %tmp.210 :setText;
+        %tmp.212 = lgetv %strmin.5;
+        symbol [ strmin %tmp.212 134 28 34 ];
+        invoke %tmp.210 %tmp.211(%tmp.212);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_29_135_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_8_135_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_133_8_135_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 137 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %stepView.20 = local;
+        symbol [ stepView %stepView.20 137 12 20 ];
+        symbol [ View %tmp.214 137 23 27 ];
+        %tmp.214 = getv ? :View;
+        symbol [ findDrawableById %tmp.215 137 28 44 ];
+        %tmp.215 = getv function %tmp.214 :findDrawableById;
+        %tmp.216 = "StepLabel";
+        %tmp.217 = invoke %tmp.214 %tmp.215(%tmp.216);
+        %tmp.218 = as %tmp.217 WatchUi.Text;
+        symbol [ WatchUi %tmp.218 137 61 68 ];
+        symbol [ Text %tmp.218 137 69 73 ];
+        lputv %stepView.20 %tmp.218;
+        symbol [ stepView %stepView.20 137 12 20 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 138 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_8_140_8_if_stmt:
+        %tmp.219 = lgetv %stepView.20;
+        symbol [ stepView %tmp.219 138 12 20 ];
+        %tmp.220 = null;
+        %tmp.221 = ne %tmp.219 %tmp.220;
+        bf %tmp.221 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_8_140_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_8_140_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_30_140_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 139 12 ]
+        %tmp.222 = lgetv %stepView.20;
+        symbol [ stepView %tmp.222 139 12 20 ];
+        %tmp.223 = as %tmp.222 { (!Null) };
+        symbol [ setText %tmp.224 139 21 28 ];
+        %tmp.224 = getv function %tmp.223 :setText;
+        %tmp.225 = lgetv %stepString.11;
+        symbol [ stepString %tmp.225 139 29 39 ];
+        invoke %tmp.223 %tmp.224(%tmp.225);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_30_140_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_8_140_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_138_8_140_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 142 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %altitudeView.21 = local;
+        symbol [ altitudeView %altitudeView.21 142 12 24 ];
+        symbol [ View %tmp.227 142 27 31 ];
+        %tmp.227 = getv ? :View;
+        symbol [ findDrawableById %tmp.228 142 32 48 ];
+        %tmp.228 = getv function %tmp.227 :findDrawableById;
+        %tmp.229 = "altitude";
+        %tmp.230 = invoke %tmp.227 %tmp.228(%tmp.229);
+        %tmp.231 = as %tmp.230 WatchUi.Text;
+        symbol [ WatchUi %tmp.231 142 64 71 ];
+        symbol [ Text %tmp.231 142 72 76 ];
+        lputv %altitudeView.21 %tmp.231;
+        symbol [ altitudeView %altitudeView.21 142 12 24 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 143 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_8_145_8_if_stmt:
+        %tmp.232 = lgetv %altitudeView.21;
+        symbol [ altitudeView %tmp.232 143 12 24 ];
+        %tmp.233 = null;
+        %tmp.234 = ne %tmp.232 %tmp.233;
+        bf %tmp.234 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_8_145_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_8_145_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_34_145_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 144 12 ]
+        %tmp.235 = lgetv %altitudeView.21;
+        symbol [ altitudeView %tmp.235 144 12 24 ];
+        %tmp.236 = as %tmp.235 { (!Null) };
+        symbol [ setText %tmp.237 144 25 32 ];
+        %tmp.237 = getv function %tmp.236 :setText;
+        %tmp.238 = lgetv %altitude.15;
+        symbol [ altitude %tmp.238 144 33 41 ];
+        invoke %tmp.236 %tmp.237(%tmp.238);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_34_145_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_8_145_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_143_8_145_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 147 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %batteryView.22 = local;
+        symbol [ batteryView %batteryView.22 147 12 23 ];
+        symbol [ View %tmp.240 147 26 30 ];
+        %tmp.240 = getv ? :View;
+        symbol [ findDrawableById %tmp.241 147 31 47 ];
+        %tmp.241 = getv function %tmp.240 :findDrawableById;
+        %tmp.242 = "battery";
+        %tmp.243 = invoke %tmp.240 %tmp.241(%tmp.242);
+        %tmp.244 = as %tmp.243 WatchUi.Text;
+        symbol [ WatchUi %tmp.244 147 62 69 ];
+        symbol [ Text %tmp.244 147 70 74 ];
+        lputv %batteryView.22 %tmp.244;
+        symbol [ batteryView %batteryView.22 147 12 23 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 148 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_8_150_8_if_stmt:
+        %tmp.245 = lgetv %batteryView.22;
+        symbol [ batteryView %tmp.245 148 12 23 ];
+        %tmp.246 = null;
+        %tmp.247 = ne %tmp.245 %tmp.246;
+        bf %tmp.247 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_8_150_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_8_150_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_33_150_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 149 12 ]
+        %tmp.248 = lgetv %batteryView.22;
+        symbol [ batteryView %tmp.248 149 12 23 ];
+        %tmp.249 = as %tmp.248 { (!Null) };
+        symbol [ setText %tmp.250 149 24 31 ];
+        %tmp.250 = getv function %tmp.249 :setText;
+        %tmp.251 = lgetv %batt.12;
+        symbol [ batt %tmp.251 149 32 36 ];
+        invoke %tmp.249 %tmp.250(%tmp.251);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_33_150_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_8_150_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_148_8_150_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 155 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %phone.23 = local;
+        symbol [ phone %phone.23 155 12 17 ];
+        symbol [ System %tmp.252 155 20 26 ];
+        %tmp.252 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.253 155 27 44 ];
+        %tmp.253 = getv function %tmp.252 :getDeviceSettings;
+        %tmp.254 = invoke %tmp.252 %tmp.253();
+        symbol [ phoneConnected %tmp.255 155 47 61 ];
+        %tmp.255 = getv %tmp.254 :phoneConnected;
+        lputv %phone.23 %tmp.255;
+        symbol [ phone %phone.23 155 12 17 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 156 8 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop" ]
+        %connected.24 = local;
+        symbol [ connected %connected.24 156 12 21 ];
+        %tmp.256 = null;
+        lputv %connected.24 %tmp.256;
+        symbol [ connected %connected.24 156 12 21 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 157 8 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_8_172_8_if_stmt:
+        %tmp.257 = lgetv %phone.23;
+        symbol [ phone %tmp.257 157 12 17 ];
+        %tmp.258 = true;
+        %tmp.259 = eq %tmp.257 %tmp.258;
+        bf %tmp.259 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_8_172_8_if_else_false;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_8_172_8_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_27_164_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 158 12 ]
+        %tmp.260 = "connected";
+        lputv %connected.24 %tmp.260;
+        symbol [ connected %connected.24 158 12 21 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 159 12 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_27_164_8_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_27_164_8_stop" ]
+        %phoneView.25 = local;
+        symbol [ phoneView %phoneView.25 159 16 25 ];
+        symbol [ View %tmp.262 159 28 32 ];
+        %tmp.262 = getv ? :View;
+        symbol [ findDrawableById %tmp.263 159 33 49 ];
+        %tmp.263 = getv function %tmp.262 :findDrawableById;
+        %tmp.264 = "phone";
+        %tmp.265 = invoke %tmp.262 %tmp.263(%tmp.264);
+        %tmp.266 = as %tmp.265 WatchUi.Text;
+        symbol [ WatchUi %tmp.266 159 62 69 ];
+        symbol [ Text %tmp.266 159 70 74 ];
+        lputv %phoneView.25 %tmp.266;
+        symbol [ phoneView %phoneView.25 159 16 25 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 160 12 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_12_162_12_if_stmt:
+        %tmp.267 = lgetv %phoneView.25;
+        symbol [ phoneView %tmp.267 160 16 25 ];
+        %tmp.268 = null;
+        %tmp.269 = ne %tmp.267 %tmp.268;
+        bf %tmp.269 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_12_162_12_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_12_162_12_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_35_162_12_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 161 16 ]
+        %tmp.270 = lgetv %phoneView.25;
+        symbol [ phoneView %tmp.270 161 16 25 ];
+        %tmp.271 = as %tmp.270 { (!Null) };
+        symbol [ setText %tmp.272 161 26 33 ];
+        %tmp.272 = getv function %tmp.271 :setText;
+        %tmp.273 = lgetv %connected.24;
+        symbol [ connected %tmp.273 161 34 43 ];
+        invoke %tmp.271 %tmp.272(%tmp.273);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_35_162_12_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_12_162_12_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_160_12_162_12_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 163 12 ]
+        symbol [ System %tmp.274 163 12 18 ];
+        %tmp.274 = getm $.Toybox.System;
+        symbol [ println %tmp.275 163 19 26 ];
+        %tmp.275 = getv function %tmp.274 :println;
+        %tmp.276 = "connected:";
+        %tmp.277 = lgetv %connected.24;
+        symbol [ connected %tmp.277 163 42 51 ];
+        %tmp.278 = add %tmp.276 %tmp.277;
+        invoke %tmp.274 %tmp.275(%tmp.278);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_27_164_8_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_8_172_8_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_8_172_8_if_else_false:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_165_13_172_8_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 166 12 ]
+        %tmp.279 = "connected";
+        lputv %connected.24 %tmp.279;
+        symbol [ connected %connected.24 166 12 21 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 167 12 ]
+        [ "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_165_13_172_8_start" "C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_165_13_172_8_stop" ]
+        %notPhoneView.26 = local;
+        symbol [ notPhoneView %notPhoneView.26 167 16 28 ];
+        symbol [ View %tmp.281 167 31 35 ];
+        %tmp.281 = getv ? :View;
+        symbol [ findDrawableById %tmp.282 167 36 52 ];
+        %tmp.282 = getv function %tmp.281 :findDrawableById;
+        %tmp.283 = "notphone";
+        %tmp.284 = invoke %tmp.281 %tmp.282(%tmp.283);
+        %tmp.285 = as %tmp.284 WatchUi.Text;
+        symbol [ WatchUi %tmp.285 167 68 75 ];
+        symbol [ Text %tmp.285 167 76 80 ];
+        lputv %notPhoneView.26 %tmp.285;
+        symbol [ notPhoneView %notPhoneView.26 167 16 28 ];
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 168 12 ]
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_12_170_12_if_stmt:
+        %tmp.286 = lgetv %notPhoneView.26;
+        symbol [ notPhoneView %tmp.286 168 16 28 ];
+        %tmp.287 = null;
+        %tmp.288 = ne %tmp.286 %tmp.287;
+        bf %tmp.288 @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_12_170_12_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_12_170_12_if_true:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_38_170_12_start:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 169 16 ]
+        %tmp.289 = lgetv %notPhoneView.26;
+        symbol [ notPhoneView %tmp.289 169 16 28 ];
+        %tmp.290 = as %tmp.289 { (!Null) };
+        symbol [ setText %tmp.291 169 29 36 ];
+        %tmp.291 = getv function %tmp.290 :setText;
+        %tmp.292 = lgetv %connected.24;
+        symbol [ connected %tmp.292 169 37 46 ];
+        invoke %tmp.290 %tmp.291(%tmp.292);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_38_170_12_stop:
+        goto @C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_12_170_12_if_end;
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_168_12_170_12_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 171 12 ]
+        symbol [ System %tmp.293 171 12 18 ];
+        %tmp.293 = getm $.Toybox.System;
+        symbol [ println %tmp.294 171 19 26 ];
+        %tmp.294 = getv function %tmp.293 :println;
+        %tmp.295 = "notconnected:";
+        %tmp.296 = lgetv %connected.24;
+        symbol [ connected %tmp.296 171 45 54 ];
+        %tmp.297 = add %tmp.295 %tmp.296;
+        invoke %tmp.293 %tmp.294(%tmp.297);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_165_13_172_8_stop:
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_157_8_172_8_if_end:
+[ "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc" 180 8 ]
+        symbol [ View %tmp.299 180 8 12 ];
+        %tmp.299 = getv ? :View;
+        symbol [ onUpdate %tmp.300 180 13 21 ];
+        %tmp.300 = getv function %tmp.299 :onUpdate;
+        %tmp.301 = lgetv %dc;
+        symbol [ dc %tmp.301 180 22 24 ];
+        invoke %tmp.299 %tmp.300(%tmp.301);
+C__Users_57663098_OneDrive___El_Corte_Inglés__S_A_Github_triboost_watchface_source_TestView_original_mc_34_26_181_4_stop:
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 186; @symbol_functiondef = [onHide,186,13,19]; ]
+    function onHide() {
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 190; @symbol_functiondef = [onExitSleep,190,13,24]; ]
+    function onExitSleep() {
+    }
+    [ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 194; @symbol_functiondef = [onEnterSleep,194,13,25]; ]
+    function onEnterSleep() {
+    }
+}
+[ @file = "C:\Users\57663098\OneDrive - El Corte Inglés, S.A\Github\triboost_watchface\source\TestView_original.mc"; @line = 1; ]
+<init> {
+}
