@@ -1,3 +1,4 @@
 /TestView_original.mc
 /.gitignore
-/bin/developer_key
+bin/developer_key
+bin\developer_key
