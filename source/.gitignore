@@ -1,3 +1,4 @@
 /TestView_original.mc
 /.gitignore
-triboost_developer.key
+bin/developer_key
+bin\developer_key
