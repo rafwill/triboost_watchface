@@ -61,29 +61,28 @@ class TestView extends Ui.WatchFace {
     // fecha, bateria, altitud, pasos, conexion, notificaciones, linea, arcos, logo.
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
     function _drawStaticLayer(targetDc, layout, data) {
-        var cx        = layout[:cx];
         var xRight    = layout[:xRight];
+        var xPos65    = (_displayWidth * 0.65).toNumber();
         var yDate     = layout[:yDate];
-        var yBat      = layout[:yBat];
         var yAlt      = layout[:yAlt];
-        var ySteps    = layout[:ySteps];
+        // var yMin      = layout[:yMin];
+        // var yHour     = layout[:yHour];
+            var yStepsArc = (_displayHeight * 0.25).toNumber();
         var yPhone    = layout[:yPhone];
         var yNotif    = layout[:yNotif];
-        var lineTop   = layout[:lineTop];
-        var lineBot   = layout[:lineBot];
         var arcRadius = layout[:arcRadius];
         var arcCY     = layout[:arcCY];
         var arcBatX   = layout[:arcBatX];
-        var arcStepX  = layout[:arcStepX];
+        // var arcStepX  = layout[:arcStepX]; // No se usará, se reemplaza por xRight/yMin
 
         var dateString = data[:dateString];
         var batPct     = data[:batPct];
         var batColor   = data[:batColor];
-        var batStr     = data[:batStr];
+        // var batStr     = data[:batStr];
         var altStr     = data[:altStr];
         var steps      = data[:steps];
         var stepsGoal  = data[:stepsGoal];
-        var stepsPct   = data[:stepsPct];
+        // var stepsPct   = data[:stepsPct];
         var stepsColor = data[:stepsColor];
 
         targetDc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
@@ -94,25 +93,32 @@ class TestView extends Ui.WatchFace {
         targetDc.drawText(_displayWidth / 2, yDate, geo_small, dateString, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Bateria (texto con color dinamico)
-        targetDc.setColor(batColor, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xRight, yBat, geo_small, batStr, Gfx.TEXT_JUSTIFY_LEFT);
+        //targetDc.setColor(batColor, Gfx.COLOR_TRANSPARENT);
+        //targetDc.drawText(xRight, yBat, geo_small, batStr, Gfx.TEXT_JUSTIFY_LEFT);
+
+        // Arco pasos (derecha, junto a la hora)
+        var xStepsArc = (_displayWidth * 0.65).toNumber();
+        _drawProgressArcOnDc(targetDc, xStepsArc, yStepsArc, arcRadius, steps, stepsGoal, stepsColor);
+        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
+            steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
 
         // Altitud
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xRight, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.drawText(xPos65, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Pasos
-        targetDc.setColor(stepsColor, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xRight, ySteps, geo_small,
-            steps.toString() + "/" + stepsGoal.toString(), Gfx.TEXT_JUSTIFY_LEFT);
+        //targetDc.setColor(stepsColor, Gfx.COLOR_TRANSPARENT);
+        //targetDc.drawText(xRight, ySteps, geo_small,
+        //    steps.toString() + "/" + stepsGoal.toString(), Gfx.TEXT_JUSTIFY_LEFT);
 
         // Conexion telefono
         if (Sys.getDeviceSettings().phoneConnected) {
             targetDc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(xRight, yPhone, geo_small, "Conectado", Gfx.TEXT_JUSTIFY_LEFT);
+            targetDc.drawText(xPos65, yPhone, geo_small, "Conectado", Gfx.TEXT_JUSTIFY_CENTER);
         } else {
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(xRight, yPhone, geo_small, "Desconectado", Gfx.TEXT_JUSTIFY_LEFT);
+            targetDc.drawText(xPos65, yPhone, geo_small, "Desconectado", Gfx.TEXT_JUSTIFY_CENTER);
         }
 
         // Notificaciones
@@ -123,16 +129,16 @@ class TestView extends Ui.WatchFace {
                 var nLabel = (notif == 1)
                     ? (notif.toString() + " mensaje")
                     : (notif.toString() + " mensajes");
-                targetDc.drawText(xRight, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
+                targetDc.drawText(xPos65, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_CENTER);
             } else {
                 targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-                targetDc.drawText(xRight, yNotif, geo_small, "0 mensajes", Gfx.TEXT_JUSTIFY_LEFT);
+                targetDc.drawText(xPos65, yNotif, geo_small, "0 mensajes", Gfx.TEXT_JUSTIFY_CENTER);
             }
         }
 
-        // Linea divisoria
-        targetDc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawLine(cx, lineTop, cx, lineBot);
+        // Línea divisoria (comentada)
+        // targetDc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
+        // targetDc.drawLine(cx, lineTop, cx, lineBot);
 
         // Arco bateria (izquierda)
         _drawProgressArcOnDc(targetDc, arcBatX, arcCY, arcRadius, batPct, 100, batColor);
@@ -140,11 +146,7 @@ class TestView extends Ui.WatchFace {
         targetDc.drawText(arcBatX, arcCY - (arcRadius * 0.35).toNumber(), geo_small,
             batPct.toString() + "%", Gfx.TEXT_JUSTIFY_CENTER);
 
-        // Arco pasos (derecha)
-        _drawProgressArcOnDc(targetDc, arcStepX, arcCY, arcRadius, steps, stepsGoal, stepsColor);
-        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(arcStepX, arcCY - (arcRadius * 0.35).toNumber(), geo_small,
-            stepsPct.toString() + "%", Gfx.TEXT_JUSTIFY_CENTER);
+        // (Eliminado arco de pasos duplicado)
 
         // Logo
         targetDc.drawBitmap((_displayWidth * 0.04).toNumber(),
@@ -156,20 +158,22 @@ class TestView extends Ui.WatchFace {
     // Se llama siempre despues de blitear el buffer (o tras _drawStaticLayer en el
     // fallback sin buffer), de modo que sobrescribe el placeholder de FC del buffer.
     function _drawDynamicLayer(dc, xLeft, yHour, yMin, xRight, yHr, strhour, strmin) {
-        // Hora (amarillo) y minutos (gris oscuro)
-        dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(xLeft, yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
-        dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(xLeft, yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_RIGHT);
+        // Hora (amarillo) y minutos (gris oscuro) - ambos calculados
+            dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
+            dc.drawText((_displayWidth * 0.35).toNumber(), (_displayHeight * 0.10).toNumber(), calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
+            dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+            dc.drawText((_displayWidth * 0.35).toNumber(), (_displayHeight * 0.36).toNumber(), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Frecuencia cardiaca: siempre en tiempo real
         var hrInfo = Act.getActivityInfo().currentHeartRate;
+        var xPos65 = (_displayWidth * 0.65).toNumber();
+        var cy = (_displayHeight / 2).toNumber();
         if (hrInfo != null && hrInfo > 0) {
             dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
-            dc.drawText(xRight, yHr, geo_small, hrInfo.toString() + " bpm", Gfx.TEXT_JUSTIFY_LEFT);
+            dc.drawText(xPos65, cy, geo_small, hrInfo.toString() + " bpm", Gfx.TEXT_JUSTIFY_CENTER);
         } else {
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-            dc.drawText(xRight, yHr, geo_small, "-- bpm", Gfx.TEXT_JUSTIFY_LEFT);
+            dc.drawText(xPos65, cy, geo_small, "-- bpm", Gfx.TEXT_JUSTIFY_CENTER);
         }
     }
 
@@ -207,18 +211,18 @@ class TestView extends Ui.WatchFace {
         var yDate     = (displayHeight * 0.04).toNumber();
         var yHour     = (displayHeight * 0.10).toNumber();
         var yMin      = (displayHeight * 0.36).toNumber();
-        var yBat      = (displayHeight * 0.19).toNumber();
-        var yAlt      = (displayHeight * 0.28).toNumber();
-        var ySteps    = (displayHeight * 0.37).toNumber();
+        // var yBat      = (displayHeight * 0.19).toNumber();
+        var yNotif    = (displayHeight * 0.62).toNumber();
+        var yAlt      = yNotif + (displayHeight * 0.05).toNumber(); // Justo debajo de mensajes
+        // var ySteps    = (displayHeight * 0.37).toNumber();
         var yHr       = (displayHeight * 0.46).toNumber();
         var yPhone    = (displayHeight * 0.55).toNumber();
-        var yNotif    = (displayHeight * 0.62).toNumber();
-        var lineTop   = (displayHeight * 0.17).toNumber();
-        var lineBot   = (displayHeight * 0.67).toNumber();
+        // var lineTop   = (displayHeight * 0.17).toNumber();
+        // var lineBot   = (displayHeight * 0.67).toNumber();
         var arcRadius = (displayHeight * 0.11).toNumber();
         var arcCY     = (displayHeight * 0.84).toNumber();
         var arcBatX   = (displayWidth  * 0.27).toNumber();
-        var arcStepX  = (displayWidth  * 0.73).toNumber();
+        // var arcStepX  = (displayWidth  * 0.73).toNumber();
 
         // Guardar area de clip para onPartialUpdate (columna izquierda: hora/min)
         _timeClipX = 0;
@@ -275,11 +279,10 @@ class TestView extends Ui.WatchFace {
             // Si hay buffer: dibujar en el buffer. Si no: dibujar directamente en dc.
             var targetDc = (_bgBuffer != null) ? _bgBuffer.getDc() : dc;
             var staticLayout = {
-                :cx => cx, :xRight => xRight,
-                :yDate => yDate, :yBat => yBat, :yAlt => yAlt, :ySteps => ySteps,
+                :xRight => xRight,
+                :yDate => yDate, :yAlt => yAlt, :yMin => yMin,
                 :yPhone => yPhone, :yNotif => yNotif,
-                :lineTop => lineTop, :lineBot => lineBot,
-                :arcRadius => arcRadius, :arcCY => arcCY, :arcBatX => arcBatX, :arcStepX => arcStepX
+                :arcRadius => arcRadius, :arcCY => arcCY, :arcBatX => arcBatX
             };
             var staticData = {
                 :dateString => dateString,
