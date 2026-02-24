@@ -95,6 +95,9 @@ class TestView extends Ui.WatchFace {
         targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
             steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
         var labelGap = (_displayWidth * 0.02).toNumber();
+        // Gap mínimo en píxeles entre etiqueta y valor (aumentado para evitar solapamientos)
+        var gapPx = labelGap;
+        if (gapPx < 10) { gapPx = 10; }
 
         // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
         var altLabel = "ALT";
@@ -103,7 +106,7 @@ class TestView extends Ui.WatchFace {
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX, yAlt, geo_small, altLabel, Gfx.TEXT_JUSTIFY_LEFT);
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(leftArcX + altLabelWidth + labelGap, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.drawText(leftArcX + altLabelWidth + gapPx, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
 
         // Conexion telefono
         if (Sys.getDeviceSettings().phoneConnected) {
@@ -121,9 +124,6 @@ class TestView extends Ui.WatchFace {
             var notLabel = "NOT";
             // Estimación conservadora del ancho por carácter (evita solapamientos)
             var notLabelWidth = (notLabel.length() * (_displayWidth * 0.032)).toNumber();
-            // Separación mínima en píxeles (~4-8 px) para simular un par de milímetros
-            var gapPx = labelGap;
-            if (gapPx < 6) { gapPx = 6; }
             targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             targetDc.drawText(leftArcX, yNotif, geo_small, notLabel, Gfx.TEXT_JUSTIFY_LEFT);
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
