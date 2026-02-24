@@ -96,11 +96,25 @@ class TestView extends Ui.WatchFace {
         var innerRadius = (outerRadius - 6).toNumber();
         // Use the same progress-drawing helper as other arcs so the filled portion
         // represents `batPct` and the remainder is shown in DK_GRAY.
-        // Draw bezel as a partial/full arc starting at 170º spanning 340º
-        var bezelStart = 190;
+        // Draw bezel as a partial/full arc with a bottom gap centered at 270º
+        // Compute start angle so: gapMid = startAngle - (bezelSweep / 2)
+        // For bezelSweep=340, startAngle = gapMid + 170 => gapMid 270 -> startAngle 80
+        var bezelStart = 80;
         var bezelSweep = 340;
         _drawBezelProgress(targetDc, cx, cy, outerRadius, data[:batPct], 100, data[:batColor], bezelStart, bezelSweep);
         _drawBezelProgress(targetDc, cx, cy, innerRadius, data[:batPct], 100, data[:batColor], bezelStart, bezelSweep);
+        // Draw battery percentage inside the bezel gap (centered in the empty arc)
+        // Place gap midpoint angle at 90º (top of the watch)
+        var gapMid = 90.0;
+        var rad = (gapMid * Math.PI / 180.0).toFloat();
+        var textRadius = (innerRadius - 8).toNumber();
+        var pctX = (cx + Math.cos(rad) * textRadius).toNumber();
+        var pctY = (cy - Math.sin(rad) * textRadius).toNumber();
+        // Nudge percentage slightly upwards so it sits above the bezel gap
+        var pctYOffset = 16; // pixels (moved 8px more)
+        pctY = (pctY - pctYOffset).toNumber();
+        targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(pctX, pctY, geo_small, (data[:batPct].toString() + "%"), Gfx.TEXT_JUSTIFY_CENTER);
         // --------------------------------------------------------------------
 
         // Fecha
@@ -167,15 +181,20 @@ class TestView extends Ui.WatchFace {
             targetDc.drawText(leftArcX + notLabelWidth + gapNotPx, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
         }
 
-        // Arco bateria (izquierda)
-        _drawProgressArcOnDc(targetDc, arcBatX, arcCY, arcRadius, batPct, 100, batColor);
-        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(arcBatX, arcCY - (arcRadius * 0.35).toNumber(), geo_small,
-            batPct.toString() + "%", Gfx.TEXT_JUSTIFY_CENTER);
+        // Left battery arc removed (now represented in the bezel)
 
-        // Logo
-        targetDc.drawBitmap((_displayWidth * 0.04).toNumber(),
-            (_displayHeight * 0.70).toNumber(), logo);
+        // Logo: center horizontally, keep Y at 70% of display height
+        if (logo != null) {
+            var logoW = logo.getWidth().toNumber();
+            var logoH = logo.getHeight().toNumber();
+            var scale = 1.4; // 40% larger
+            var drawW = (logoW * scale).toNumber();
+            var drawH = (logoH * scale).toNumber();
+            var logoX = ((_displayWidth / 2) - (drawW / 2)).toNumber();
+            var logoY = (_displayHeight * 0.70).toNumber();
+            // Attempt to draw scaled; drawBitmap(x,y,w,h,bitmap) is supported on newer SDKs
+            targetDc.drawBitmap(logoX, logoY, drawW, drawH, logo);
+        }
     }
 
     // ── _drawDynamicLayer ─────────────────────────────────────────────────────
@@ -236,7 +255,7 @@ class TestView extends Ui.WatchFace {
         var xLeft     = cx - 5;
         var xRight    = cx + 5;
 
-        var yDate     = (displayHeight * 0.04).toNumber();
+        var yDate     = (displayHeight * 0.87).toNumber();
         var yHour     = _getYHour(displayHeight);
         var yMin      = _getYMin(displayHeight);
         // var yBat      = (displayHeight * 0.19).toNumber();
