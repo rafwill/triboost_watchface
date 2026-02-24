@@ -125,7 +125,7 @@ class TestView extends Ui.WatchFace {
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX, floorY, geo_small, floorLabel, Gfx.TEXT_JUSTIFY_LEFT);
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(leftArcX + floorLabelWidth + gapAltPx, floorY, geo_small, floor.toString(), Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.drawText(leftArcX + floorLabelWidth + gapAltPx, floorY, geo_small, floor.format("%.0f"), Gfx.TEXT_JUSTIFY_LEFT);
 
         // Conexion telefono
         if (Sys.getDeviceSettings().phoneConnected) {
@@ -285,14 +285,16 @@ class TestView extends Ui.WatchFace {
         // Preferir propiedad nativa si existe en la estructura de actividad
         if (activity != null) {
             if (activity has :floors) {
-                FLOOR = activity.floors.toNumber();
+                FLOOR = Math.round(activity.floors.toFloat());
             } else if (activity has :floorsAscended) {
-                FLOOR = activity.floorsAscended.toNumber();
+                FLOOR = Math.round(activity.floorsAscended.toFloat());
             } else if (activity has :elevationGain) {
                 // Suponemos ~3 metros por piso
                 FLOOR = Math.round(activity.elevationGain.toFloat() / 3.0);
             }
         }
+        // Asegurar entero no negativo
+        if (FLOOR < 0) { FLOOR = 0; }
         // Fallback: si no hay dato nativo, estimar a partir de la altitud relativa
         if (FLOOR == 0) {
             if (altInfo != null) {
