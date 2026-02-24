@@ -40,6 +40,10 @@ class TestView extends Ui.WatchFace {
     var _timeClipW = 0;
     var _timeClipH = 0;
 
+    function initialize() {
+        Ui.WatchFace.initialize();
+    }
+
     function onLayout(dc) {
         geo_small        = Ui.loadResource(Rez.Fonts.geo_small);
         geo_number_small = Ui.loadResource(Rez.Fonts.geo_number_small);
@@ -63,7 +67,7 @@ class TestView extends Ui.WatchFace {
     // fecha, bateria, altitud, pasos, conexion, notificaciones, linea, arcos, logo.
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
     function _drawStaticLayer(targetDc, layout, data) {
-        var xRight    = layout[:xRight];
+        // var xRight intentionally unused in this layer (kept in layout for compatibility)
         var yDate     = layout[:yDate];
         var yAlt      = layout[:yAlt];
         var yStepsArc = (_displayHeight * 0.25).toNumber();
@@ -84,6 +88,17 @@ class TestView extends Ui.WatchFace {
 
         targetDc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
         targetDc.clear();
+
+        // --- Bezel / battery rim: draw progress arcs showing battery level ---
+        var cx = (_displayWidth / 2).toNumber();
+        var cy = (_displayHeight / 2).toNumber();
+        var outerRadius = (((_displayWidth < _displayHeight) ? _displayWidth : _displayHeight) / 2 - 2).toNumber();
+        var innerRadius = (outerRadius - 6).toNumber();
+        // Use the same progress-drawing helper as other arcs so the filled portion
+        // represents `batPct` and the remainder is shown in DK_GRAY.
+        _drawProgressArcOnDc(targetDc, cx, cy, outerRadius, data[:batPct], 100, data[:batColor]);
+        _drawProgressArcOnDc(targetDc, cx, cy, innerRadius, data[:batPct], 100, data[:batColor]);
+        // --------------------------------------------------------------------
 
         // Fecha
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
@@ -371,7 +386,6 @@ class TestView extends Ui.WatchFace {
         var xOffset = (_displayHeight == 180) ? 12 : 0;
         xOffset = mirrored ? -xOffset : xOffset;
         var cx    = _displayWidth / 2 + xOffset;
-        var xLeft = cx - 5;
         var yHour = _getYHour(_displayHeight);
         var yMin  = _getYMin(_displayHeight);
 
