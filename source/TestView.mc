@@ -160,7 +160,7 @@ class TestView extends Ui.WatchFace {
     function _drawDynamicLayer(dc, xLeft, yHour, yMin, xRight, yHr, strhour, strmin) {
         // Hora (amarillo) y minutos (gris oscuro) - ambos calculados
             dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-            dc.drawText(_getXMin(_displayWidth), (_displayHeight * 0.10).toNumber(), calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText(_getXMin(_displayWidth), _getYHour(_displayHeight), calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             dc.drawText(_getXMin(_displayWidth), _getYMin(_displayHeight), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
 
@@ -209,7 +209,7 @@ class TestView extends Ui.WatchFace {
         var xRight    = cx + 5;
 
         var yDate     = (displayHeight * 0.04).toNumber();
-        var yHour     = (displayHeight * 0.10).toNumber();
+        var yHour     = _getYHour(displayHeight);
         var yMin      = _getYMin(displayHeight);
         // var yBat      = (displayHeight * 0.19).toNumber();
         var yNotif    = (displayHeight * 0.62).toNumber();
@@ -333,7 +333,7 @@ class TestView extends Ui.WatchFace {
         xOffset = mirrored ? -xOffset : xOffset;
         var cx    = _displayWidth / 2 + xOffset;
         var xLeft = cx - 5;
-        var yHour = (_displayHeight * 0.10).toNumber();
+        var yHour = _getYHour(_displayHeight);
         var yMin  = _getYMin(_displayHeight);
 
         dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
@@ -371,6 +371,11 @@ class TestView extends Ui.WatchFace {
     // Retorna la coordenada X para la columna de hora/minutos (porcentaje desde la izquierda).
     function _getXMin(displayWidth) {
         return (displayWidth * 0.35).toNumber();
+    }
+
+    // Retorna la coordenada Y para la hora (porcentaje desde arriba).
+    function _getYHour(displayHeight) {
+        return (displayHeight * 0.10).toNumber();
     }
 
 
