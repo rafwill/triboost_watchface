@@ -92,8 +92,8 @@ class TestView extends Ui.WatchFace {
         var xStepsArc = (leftArcX + arcRadius).toNumber();
         _drawProgressArcOnDc(targetDc, xStepsArc, yStepsArc, arcRadius, steps, stepsGoal, stepsColor);
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(leftArcX, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
-            steps.toString(), Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
+            steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
         var labelGap = (_displayWidth * 0.02).toNumber();
 
         // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
