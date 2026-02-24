@@ -171,7 +171,8 @@ class TestView extends Ui.WatchFace {
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             dc.drawText(_getXMin(_displayWidth), _getYMin(_displayHeight), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
 
-        // Frecuencia cardiaca: siempre en tiempo real
+        // Frecuencia cardiaca: visualización comentada por petición
+        /*
         var hrInfo = Act.getActivityInfo().currentHeartRate;
         var arcRadius = (_displayHeight * 0.11).toNumber();
         var leftArcX = (_displayWidth * 0.55).toNumber();
@@ -183,6 +184,7 @@ class TestView extends Ui.WatchFace {
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             dc.drawText(leftArcX, cy, geo_small, "-- bpm", Gfx.TEXT_JUSTIFY_LEFT);
         }
+        */
     }
 
     // ── onUpdate ─────────────────────────────────────────────────────────────
