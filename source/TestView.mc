@@ -97,12 +97,12 @@ class TestView extends Ui.WatchFace {
         // Gaps independientes para ALT y NOT (estimación proporcional + mínimo)
         var labelGapAlt = (_displayWidth * 0.02).toNumber();
         var gapAltPx = labelGapAlt;
-        // Altitud puede usar un gap algo menor si es necesario
-        if (gapAltPx < 8) { gapAltPx = 8; }
+        // Altitud gap mínimo (ajustado a 6px)
+        if (gapAltPx < 6) { gapAltPx = 6; }
 
         var labelGapNot = (_displayWidth * 0.02).toNumber();
         var gapNotPx = labelGapNot;
-        // Notificaciones mantienen el gap mínimo más conservador
+        // Notificaciones gap mínimo (ajustado a 10px)
         if (gapNotPx < 10) { gapNotPx = 10; }
 
         // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
