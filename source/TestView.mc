@@ -120,7 +120,7 @@ class TestView extends Ui.WatchFace {
         // Mostrar FLOOR (pisos) justo debajo de ALT usando la misma referencia X
         if (floor == null) { floor = 0; }
         var floorLabel = "FLR";
-        var floorY = (_displayHeight * 0.64).toNumber();
+        var floorY = (_displayHeight * 0.56).toNumber();
         var floorLabelWidth = (floorLabel.length() * (_displayWidth * 0.032)).toNumber();
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX, floorY, geo_small, floorLabel, Gfx.TEXT_JUSTIFY_LEFT);
@@ -222,11 +222,11 @@ class TestView extends Ui.WatchFace {
         var yHour     = _getYHour(displayHeight);
         var yMin      = _getYMin(displayHeight);
         // var yBat      = (displayHeight * 0.19).toNumber();
-        var yNotif    = (displayHeight * 0.52).toNumber();
-        var yAlt      = (displayHeight * 0.58).toNumber(); // Ahora calculado como porcentaje (58%)
+        var yNotif    = (displayHeight * 0.46).toNumber();
+        var yAlt      = (displayHeight * 0.52).toNumber(); // Ahora calculado como porcentaje (52%)
         // var ySteps    = (displayHeight * 0.37).toNumber();
         var yHr       = (displayHeight * 0.40).toNumber();
-        var yPhone    = (displayHeight * 0.46).toNumber();
+        var yPhone    = (displayHeight * 0.40).toNumber();
         // var lineTop   = (displayHeight * 0.17).toNumber();
         // var lineBot   = (displayHeight * 0.67).toNumber();
         var arcRadius = (displayHeight * 0.11).toNumber();
