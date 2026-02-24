@@ -87,14 +87,13 @@ class TestView extends Ui.WatchFace {
         targetDc.drawText(_displayWidth / 2, yDate, geo_small, dateString, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Arco pasos (derecha, junto a la hora)
-        var xStepsArc = _getXRight(_displayWidth);
+        // Queremos que el BORDE IZQUIERDO del arco esté en 55% del ancho.
+        var leftArcX = (_displayWidth * 0.55).toNumber();
+        var xStepsArc = (leftArcX + arcRadius).toNumber();
         _drawProgressArcOnDc(targetDc, xStepsArc, yStepsArc, arcRadius, steps, stepsGoal, stepsColor);
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
+        targetDc.drawText(leftArcX, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
             steps.toString(), Gfx.TEXT_JUSTIFY_LEFT);
-
-        // Ancla izquierda del arco para alinear textos (borde izquierdo del arco)
-        var leftArcX = (xStepsArc - arcRadius).toNumber();
         var labelGap = (_displayWidth * 0.02).toNumber();
 
         // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
@@ -150,9 +149,8 @@ class TestView extends Ui.WatchFace {
 
         // Frecuencia cardiaca: siempre en tiempo real
         var hrInfo = Act.getActivityInfo().currentHeartRate;
-        var xStepsArc = _getXRight(_displayWidth);
         var arcRadius = (_displayHeight * 0.11).toNumber();
-        var leftArcX = (xStepsArc - arcRadius).toNumber();
+        var leftArcX = (_displayWidth * 0.55).toNumber();
         var cy = yHr; // Usar porcentaje homogeneizado (45% alto)
         if (hrInfo != null && hrInfo > 0) {
             dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
