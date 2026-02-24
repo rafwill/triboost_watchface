@@ -77,6 +77,7 @@ class TestView extends Ui.WatchFace {
         var batPct     = data[:batPct];
         var batColor   = data[:batColor];
         var altStr     = data[:altStr];
+        var floor      = data[:floor];
         var steps      = data[:steps];
         var stepsGoal  = data[:stepsGoal];
         var stepsColor = data[:stepsColor];
@@ -115,6 +116,16 @@ class TestView extends Ui.WatchFace {
         targetDc.drawText(leftArcX, yAlt, geo_small, altLabel, Gfx.TEXT_JUSTIFY_LEFT);
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX + altLabelWidth + gapAltPx, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
+
+        // Mostrar FLOOR (pisos) justo debajo de ALT usando la misma referencia X
+        if (floor == null) { floor = 0; }
+        var floorLabel = "FLR";
+        var floorY = (yAlt + (_displayHeight * 0.04)).toNumber();
+        var floorLabelWidth = (floorLabel.length() * (_displayWidth * 0.032)).toNumber();
+        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(leftArcX, floorY, geo_small, floorLabel, Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(leftArcX + floorLabelWidth + gapAltPx, floorY, geo_small, floor.toString(), Gfx.TEXT_JUSTIFY_LEFT);
 
         // Conexion telefono
         if (Sys.getDeviceSettings().phoneConnected) {
@@ -279,7 +290,7 @@ class TestView extends Ui.WatchFace {
                 FLOOR = activity.floorsAscended.toNumber();
             } else if (activity has :elevationGain) {
                 // Suponemos ~3 metros por piso
-                FLOOR = (activity.elevationGain.toFloat() / 3.0).toNumber().round();
+                FLOOR = Math.round(activity.elevationGain.toFloat() / 3.0);
             }
         }
         // Fallback: si no hay dato nativo, estimar a partir de la altitud relativa
@@ -291,7 +302,7 @@ class TestView extends Ui.WatchFace {
                 }
                 var delta = currentAlt - _startAltitude;
                 if (delta < 0) { delta = 0; }
-                FLOOR = (delta / 3.0).toNumber().round();
+                FLOOR = Math.round(delta / 3.0);
             }
         }
 
