@@ -162,12 +162,12 @@ class TestView extends Ui.WatchFace {
             dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
             dc.drawText((_displayWidth * 0.35).toNumber(), (_displayHeight * 0.10).toNumber(), calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-            dc.drawText((_displayWidth * 0.35).toNumber(), (_displayHeight * 0.36).toNumber(), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText((_displayWidth * 0.35).toNumber(), _getYMin(_displayHeight), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Frecuencia cardiaca: siempre en tiempo real
         var hrInfo = Act.getActivityInfo().currentHeartRate;
         var xPos65 = (_displayWidth * 0.65).toNumber();
-        var cy = (_displayHeight / 2).toNumber();
+        var cy = yMin; // Alinear verticalmente con los minutos
         if (hrInfo != null && hrInfo > 0) {
             dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
             dc.drawText(xPos65, cy, geo_small, hrInfo.toString() + " bpm", Gfx.TEXT_JUSTIFY_CENTER);
@@ -210,7 +210,7 @@ class TestView extends Ui.WatchFace {
 
         var yDate     = (displayHeight * 0.04).toNumber();
         var yHour     = (displayHeight * 0.10).toNumber();
-        var yMin      = (displayHeight * 0.36).toNumber();
+        var yMin      = _getYMin(displayHeight);
         // var yBat      = (displayHeight * 0.19).toNumber();
         var yNotif    = (displayHeight * 0.62).toNumber();
         var yAlt      = yNotif + (displayHeight * 0.05).toNumber(); // Justo debajo de mensajes
@@ -334,7 +334,7 @@ class TestView extends Ui.WatchFace {
         var cx    = _displayWidth / 2 + xOffset;
         var xLeft = cx - 5;
         var yHour = (_displayHeight * 0.10).toNumber();
-        var yMin  = (_displayHeight * 0.36).toNumber();
+        var yMin  = _getYMin(_displayHeight);
 
         dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
         dc.drawText(xLeft, yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
@@ -362,6 +362,12 @@ class TestView extends Ui.WatchFace {
     }
 
     // ── Helpers ──────────────────────────────────────────────────────────────
+
+    // Retorna la coordenada Y para los minutos (porcentaje desde arriba).
+    function _getYMin(displayHeight) {
+        return (displayHeight * 0.36).toNumber();
+    }
+
 
     // Dibuja un arco de progreso sobre cualquier DC (buffer o pantalla real).
     // Fondo completo en gris oscuro; relleno coloreado proporcional a value/maxValue.
