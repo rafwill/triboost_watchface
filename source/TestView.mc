@@ -32,6 +32,8 @@ class TestView extends Ui.WatchFace {
     var _lastMinute   = -1;     // minuto en el que se dibujó el buffer por ultima vez
     var _displayWidth  = 0;
     var _displayHeight = 0;
+    // Altitud de referencia para el cálculo por defecto de pisos
+    var _startAltitude = null;
     // Area del clip para onPartialUpdate (zona izquierda donde estan hora/min)
     var _timeClipX = 0;
     var _timeClipY = 0;
@@ -267,6 +269,32 @@ class TestView extends Ui.WatchFace {
         if (stepsPct > 100) { stepsPct = 100; }
         var stepsColor = (stepsPct >= 100) ? Gfx.COLOR_GREEN : Gfx.COLOR_WHITE;
 
+        // Calcular número de pisos subidos (FLOOR)
+        var FLOOR = 0;
+        // Preferir propiedad nativa si existe en la estructura de actividad
+        if (activity != null) {
+            if (activity has :floors) {
+                FLOOR = activity.floors.toNumber();
+            } else if (activity has :floorsAscended) {
+                FLOOR = activity.floorsAscended.toNumber();
+            } else if (activity has :elevationGain) {
+                // Suponemos ~3 metros por piso
+                FLOOR = (activity.elevationGain.toFloat() / 3.0).toNumber().round();
+            }
+        }
+        // Fallback: si no hay dato nativo, estimar a partir de la altitud relativa
+        if (FLOOR == 0) {
+            if (altInfo != null) {
+                var currentAlt = altInfo.toFloat();
+                if (_startAltitude == null) {
+                    _startAltitude = currentAlt;
+                }
+                var delta = currentAlt - _startAltitude;
+                if (delta < 0) { delta = 0; }
+                FLOOR = (delta / 3.0).toNumber().round();
+            }
+        }
+
         // ── Redibujar capa estatica si el minuto cambio o el buffer esta invalidado
         if (_bufferDirty || curMin != _lastMinute) {
             _lastMinute  = curMin;
@@ -283,7 +311,8 @@ class TestView extends Ui.WatchFace {
                 :dateString => dateString,
                 :batPct => batPct, :batColor => batColor, :batStr => batStr,
                 :altStr => altStr,
-                :steps => steps, :stepsGoal => stepsGoal, :stepsPct => stepsPct, :stepsColor => stepsColor
+                :steps => steps, :stepsGoal => stepsGoal, :stepsPct => stepsPct, :stepsColor => stepsColor,
+                :floor => FLOOR
             };
             _drawStaticLayer(targetDc, staticLayout, staticData);
         }
