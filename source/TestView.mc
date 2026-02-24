@@ -376,9 +376,9 @@ class TestView extends Ui.WatchFace {
         var yMin  = _getYMin(_displayHeight);
 
         dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(_getXMin(_displayWidth), yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
+        dc.drawText(_getXMin(_displayWidth), yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
         dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(_getXMin(_displayWidth), yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_RIGHT);
+        dc.drawText(_getXMin(_displayWidth), yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_CENTER);
 
         dc.clearClip();
     }
@@ -404,7 +404,7 @@ class TestView extends Ui.WatchFace {
 
     // Retorna la coordenada Y para los minutos (porcentaje desde arriba).
     function _getYMin(displayHeight) {
-        return (displayHeight * 0.36).toNumber();
+        return (displayHeight * 0.40).toNumber();
     }
 
     // Retorna la coordenada X para la columna de hora/minutos (porcentaje desde la izquierda).
@@ -419,7 +419,7 @@ class TestView extends Ui.WatchFace {
 
     // Retorna la coordenada Y para la hora (porcentaje desde arriba).
     function _getYHour(displayHeight) {
-        return (displayHeight * 0.10).toNumber();
+        return (displayHeight * 0.14).toNumber();
     }
 
 
