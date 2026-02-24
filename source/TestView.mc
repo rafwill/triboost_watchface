@@ -96,8 +96,11 @@ class TestView extends Ui.WatchFace {
         var innerRadius = (outerRadius - 6).toNumber();
         // Use the same progress-drawing helper as other arcs so the filled portion
         // represents `batPct` and the remainder is shown in DK_GRAY.
-        _drawProgressArcOnDc(targetDc, cx, cy, outerRadius, data[:batPct], 100, data[:batColor]);
-        _drawProgressArcOnDc(targetDc, cx, cy, innerRadius, data[:batPct], 100, data[:batColor]);
+        // Draw bezel as a partial/full arc starting at 170º spanning 340º
+        var bezelStart = 190;
+        var bezelSweep = 340;
+        _drawBezelProgress(targetDc, cx, cy, outerRadius, data[:batPct], 100, data[:batColor], bezelStart, bezelSweep);
+        _drawBezelProgress(targetDc, cx, cy, innerRadius, data[:batPct], 100, data[:batColor], bezelStart, bezelSweep);
         // --------------------------------------------------------------------
 
         // Fecha
@@ -448,6 +451,26 @@ class TestView extends Ui.WatchFace {
             var sweep = (pct * 360.0).toNumber();
             targetDc.setColor(color, Gfx.COLOR_TRANSPARENT);
             targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, 90, 90 - sweep);
+        }
+    }
+
+    // Dibuja un arco de progreso personalizado para el bisel, permitiendo definir
+    // el ángulo de inicio y la longitud total del arco (puede envolver por 0º).
+    function _drawBezelProgress(targetDc, x, y, radius, value, maxValue, color, startAngle, totalSweep) {
+        // Fondo del arco (porción no rellenada) - usar color gris oscuro por defecto
+        var bgColor = Gfx.COLOR_DK_GRAY;
+        // drawArc expects (startAngle, endAngle) and we draw clockwise, so compute
+        // endAngle = startAngle - sweepDegrees (can be negative)
+        var endAngleBg = (startAngle - totalSweep).toNumber();
+        targetDc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, startAngle, endAngleBg);
+        if (maxValue > 0 && value > 0) {
+            var pct = value.toFloat() / maxValue.toFloat();
+            if (pct > 1.0) { pct = 1.0; }
+            var sweepDeg = (totalSweep * pct).toNumber();
+            var endAngleFill = (startAngle - sweepDeg).toNumber();
+            targetDc.setColor(color, Gfx.COLOR_TRANSPARENT);
+            targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, startAngle, endAngleFill);
         }
     }
 
