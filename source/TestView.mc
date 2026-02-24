@@ -120,7 +120,7 @@ class TestView extends Ui.WatchFace {
         // Mostrar FLOOR (pisos) justo debajo de ALT usando la misma referencia X
         if (floor == null) { floor = 0; }
         var floorLabel = "FLR";
-        var floorY = (yAlt + (_displayHeight * 0.04)).toNumber();
+        var floorY = (_displayHeight * 0.64).toNumber();
         var floorLabelWidth = (floorLabel.length() * (_displayWidth * 0.032)).toNumber();
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX, floorY, geo_small, floorLabel, Gfx.TEXT_JUSTIFY_LEFT);
