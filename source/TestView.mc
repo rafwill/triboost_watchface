@@ -127,9 +127,7 @@ class TestView extends Ui.WatchFace {
         // Notificaciones: etiqueta "NOT" en gris y valor en blanco (formato similar a ALT)
         if (showNotifications && (Sys.DeviceSettings has :notificationCount)) {
             var notif = Sys.getDeviceSettings().notificationCount;
-            var nLabel = (notif == 1)
-                ? (notif.toString() + " mensaje")
-                : (notif.toString() + " mensajes");
+            var nLabel = notif.toString();
             targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             targetDc.drawText(xPos65 - labelGap, yNotif, geo_small, "NOT", Gfx.TEXT_JUSTIFY_RIGHT);
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
