@@ -160,9 +160,9 @@ class TestView extends Ui.WatchFace {
     function _drawDynamicLayer(dc, xLeft, yHour, yMin, xRight, yHr, strhour, strmin) {
         // Hora (amarillo) y minutos (gris oscuro) - ambos calculados
             dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-            dc.drawText((_displayWidth * 0.35).toNumber(), (_displayHeight * 0.10).toNumber(), calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText(_getXMin(_displayWidth), (_displayHeight * 0.10).toNumber(), calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-            dc.drawText((_displayWidth * 0.35).toNumber(), _getYMin(_displayHeight), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText(_getXMin(_displayWidth), _getYMin(_displayHeight), calibri_numbers, strmin, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Frecuencia cardiaca: siempre en tiempo real
         var hrInfo = Act.getActivityInfo().currentHeartRate;
@@ -366,6 +366,11 @@ class TestView extends Ui.WatchFace {
     // Retorna la coordenada Y para los minutos (porcentaje desde arriba).
     function _getYMin(displayHeight) {
         return (displayHeight * 0.36).toNumber();
+    }
+
+    // Retorna la coordenada X para la columna de hora/minutos (porcentaje desde la izquierda).
+    function _getXMin(displayWidth) {
+        return (displayWidth * 0.35).toNumber();
     }
 
 
