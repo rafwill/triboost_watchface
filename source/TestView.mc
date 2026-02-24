@@ -103,9 +103,12 @@ class TestView extends Ui.WatchFace {
         targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
             steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
 
-        // Altitud (etiqueta + valor)
+        // Altitud: etiqueta "ALT" en gris (como minutos) y valor numérico en blanco
+        var labelGap = (_displayWidth * 0.02).toNumber();
+        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(xPos65 - labelGap, yAlt, geo_small, "ALT", Gfx.TEXT_JUSTIFY_RIGHT);
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xPos65, yAlt, geo_small, "Altitud " + altStr, Gfx.TEXT_JUSTIFY_CENTER);
+        targetDc.drawText(xPos65 + labelGap, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
 
         // Pasos
         //targetDc.setColor(stepsColor, Gfx.COLOR_TRANSPARENT);
