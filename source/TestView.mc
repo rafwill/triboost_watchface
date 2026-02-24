@@ -62,27 +62,21 @@ class TestView extends Ui.WatchFace {
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
     function _drawStaticLayer(targetDc, layout, data) {
         var xRight    = layout[:xRight];
-        var xPos65    = _getXRight(_displayWidth);
         var yDate     = layout[:yDate];
         var yAlt      = layout[:yAlt];
-        // var yMin      = layout[:yMin];
-        // var yHour     = layout[:yHour];
-            var yStepsArc = (_displayHeight * 0.25).toNumber();
+        var yStepsArc = (_displayHeight * 0.25).toNumber();
         var yPhone    = layout[:yPhone];
         var yNotif    = layout[:yNotif];
         var arcRadius = layout[:arcRadius];
         var arcCY     = layout[:arcCY];
         var arcBatX   = layout[:arcBatX];
-        // var arcStepX  = layout[:arcStepX]; // No se usará, se reemplaza por xRight/yMin
 
         var dateString = data[:dateString];
         var batPct     = data[:batPct];
         var batColor   = data[:batColor];
-        // var batStr     = data[:batStr];
         var altStr     = data[:altStr];
         var steps      = data[:steps];
         var stepsGoal  = data[:stepsGoal];
-        // var stepsPct   = data[:stepsPct];
         var stepsColor = data[:stepsColor];
 
         targetDc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
@@ -92,59 +86,51 @@ class TestView extends Ui.WatchFace {
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(_displayWidth / 2, yDate, geo_small, dateString, Gfx.TEXT_JUSTIFY_CENTER);
 
-        // Bateria (texto con color dinamico)
-        //targetDc.setColor(batColor, Gfx.COLOR_TRANSPARENT);
-        //targetDc.drawText(xRight, yBat, geo_small, batStr, Gfx.TEXT_JUSTIFY_LEFT);
-
         // Arco pasos (derecha, junto a la hora)
         var xStepsArc = _getXRight(_displayWidth);
         _drawProgressArcOnDc(targetDc, xStepsArc, yStepsArc, arcRadius, steps, stepsGoal, stepsColor);
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
-            steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+            steps.toString(), Gfx.TEXT_JUSTIFY_LEFT);
 
-        // Altitud: etiqueta "ALT" en gris (como minutos) y valor numérico en blanco
+        // Ancla izquierda del arco para alinear textos (borde izquierdo del arco)
+        var leftArcX = (xStepsArc - arcRadius).toNumber();
         var labelGap = (_displayWidth * 0.02).toNumber();
-        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xPos65 - labelGap, yAlt, geo_small, "ALT", Gfx.TEXT_JUSTIFY_RIGHT);
-        targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xPos65 + labelGap, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
 
-        // Pasos
-        //targetDc.setColor(stepsColor, Gfx.COLOR_TRANSPARENT);
-        //targetDc.drawText(xRight, ySteps, geo_small,
-        //    steps.toString() + "/" + stepsGoal.toString(), Gfx.TEXT_JUSTIFY_LEFT);
+        // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
+        var altLabel = "ALT";
+        var altLabelWidth = (altLabel.length() * (_displayWidth * 0.018)).toNumber();
+        targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(leftArcX, yAlt, geo_small, altLabel, Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        targetDc.drawText(leftArcX + altLabelWidth + labelGap, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
 
         // Conexion telefono
         if (Sys.getDeviceSettings().phoneConnected) {
             targetDc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(xPos65, yPhone, geo_small, "Conectado", Gfx.TEXT_JUSTIFY_CENTER);
+            targetDc.drawText(leftArcX, yPhone, geo_small, "Conectado", Gfx.TEXT_JUSTIFY_LEFT);
         } else {
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(xPos65, yPhone, geo_small, "Desconectado", Gfx.TEXT_JUSTIFY_CENTER);
+            targetDc.drawText(leftArcX, yPhone, geo_small, "Desconectado", Gfx.TEXT_JUSTIFY_LEFT);
         }
 
         // Notificaciones: etiqueta "NOT" en gris y valor en blanco (formato similar a ALT)
         if (showNotifications && (Sys.DeviceSettings has :notificationCount)) {
             var notif = Sys.getDeviceSettings().notificationCount;
             var nLabel = notif.toString();
+            var notLabel = "NOT";
+            var notLabelWidth = (notLabel.length() * (_displayWidth * 0.018)).toNumber();
             targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(xPos65 - labelGap, yNotif, geo_small, "NOT", Gfx.TEXT_JUSTIFY_RIGHT);
+            targetDc.drawText(leftArcX, yNotif, geo_small, notLabel, Gfx.TEXT_JUSTIFY_LEFT);
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(xPos65 + labelGap, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
+            targetDc.drawText(leftArcX + notLabelWidth + labelGap, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
         }
-
-        // Línea divisoria (comentada)
-        // targetDc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-        // targetDc.drawLine(cx, lineTop, cx, lineBot);
 
         // Arco bateria (izquierda)
         _drawProgressArcOnDc(targetDc, arcBatX, arcCY, arcRadius, batPct, 100, batColor);
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(arcBatX, arcCY - (arcRadius * 0.35).toNumber(), geo_small,
             batPct.toString() + "%", Gfx.TEXT_JUSTIFY_CENTER);
-
-        // (Eliminado arco de pasos duplicado)
 
         // Logo
         targetDc.drawBitmap((_displayWidth * 0.04).toNumber(),
@@ -164,14 +150,16 @@ class TestView extends Ui.WatchFace {
 
         // Frecuencia cardiaca: siempre en tiempo real
         var hrInfo = Act.getActivityInfo().currentHeartRate;
-        var xPos65 = _getXRight(_displayWidth);
+        var xStepsArc = _getXRight(_displayWidth);
+        var arcRadius = (_displayHeight * 0.11).toNumber();
+        var leftArcX = (xStepsArc - arcRadius).toNumber();
         var cy = yHr; // Usar porcentaje homogeneizado (45% alto)
         if (hrInfo != null && hrInfo > 0) {
             dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
-            dc.drawText(xPos65, cy, geo_small, hrInfo.toString() + " bpm", Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText(leftArcX, cy, geo_small, hrInfo.toString() + " bpm", Gfx.TEXT_JUSTIFY_LEFT);
         } else {
             dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-            dc.drawText(xPos65, cy, geo_small, "-- bpm", Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText(leftArcX, cy, geo_small, "-- bpm", Gfx.TEXT_JUSTIFY_LEFT);
         }
     }
 
@@ -371,9 +359,9 @@ class TestView extends Ui.WatchFace {
         return (displayWidth * 0.35).toNumber();
     }
 
-    // Retorna la coordenada X para la columna derecha (65% desde la izquierda).
+    // Retorna la coordenada X para la columna derecha (60% desde la izquierda).
     function _getXRight(displayWidth) {
-        return (displayWidth * 0.65).toNumber();
+        return (displayWidth * 0.60).toNumber();
     }
 
     // Retorna la coordenada Y para la hora (porcentaje desde arriba).
