@@ -98,7 +98,8 @@ class TestView extends Ui.WatchFace {
 
         // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
         var altLabel = "ALT";
-        var altLabelWidth = (altLabel.length() * (_displayWidth * 0.018)).toNumber();
+        // Estimación conservadora del ancho por carácter (mejor que 0.018 para evitar solapamientos)
+        var altLabelWidth = (altLabel.length() * (_displayWidth * 0.032)).toNumber();
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX, yAlt, geo_small, altLabel, Gfx.TEXT_JUSTIFY_LEFT);
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
@@ -118,11 +119,15 @@ class TestView extends Ui.WatchFace {
             var notif = Sys.getDeviceSettings().notificationCount;
             var nLabel = notif.toString();
             var notLabel = "NOT";
-            var notLabelWidth = (notLabel.length() * (_displayWidth * 0.018)).toNumber();
+            // Estimación conservadora del ancho por carácter (evita solapamientos)
+            var notLabelWidth = (notLabel.length() * (_displayWidth * 0.032)).toNumber();
+            // Separación mínima en píxeles (~4-8 px) para simular un par de milímetros
+            var gapPx = labelGap;
+            if (gapPx < 6) { gapPx = 6; }
             targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             targetDc.drawText(leftArcX, yNotif, geo_small, notLabel, Gfx.TEXT_JUSTIFY_LEFT);
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(leftArcX + notLabelWidth + labelGap, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
+            targetDc.drawText(leftArcX + notLabelWidth + gapPx, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
         }
 
         // Arco bateria (izquierda)
