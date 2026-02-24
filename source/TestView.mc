@@ -124,19 +124,16 @@ class TestView extends Ui.WatchFace {
             targetDc.drawText(xPos65, yPhone, geo_small, "Desconectado", Gfx.TEXT_JUSTIFY_CENTER);
         }
 
-        // Notificaciones
+        // Notificaciones: etiqueta "NOT" en gris y valor en blanco (formato similar a ALT)
         if (showNotifications && (Sys.DeviceSettings has :notificationCount)) {
             var notif = Sys.getDeviceSettings().notificationCount;
-            if (notif > 0) {
-                targetDc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-                var nLabel = (notif == 1)
-                    ? (notif.toString() + " mensaje")
-                    : (notif.toString() + " mensajes");
-                targetDc.drawText(xPos65, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_CENTER);
-            } else {
-                targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-                targetDc.drawText(xPos65, yNotif, geo_small, "0 mensajes", Gfx.TEXT_JUSTIFY_CENTER);
-            }
+            var nLabel = (notif == 1)
+                ? (notif.toString() + " mensaje")
+                : (notif.toString() + " mensajes");
+            targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+            targetDc.drawText(xPos65 - labelGap, yNotif, geo_small, "NOT", Gfx.TEXT_JUSTIFY_RIGHT);
+            targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+            targetDc.drawText(xPos65 + labelGap, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
         }
 
         // Línea divisoria (comentada)
