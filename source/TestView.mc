@@ -94,10 +94,16 @@ class TestView extends Ui.WatchFace {
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
             steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
-        var labelGap = (_displayWidth * 0.02).toNumber();
-        // Gap mínimo en píxeles entre etiqueta y valor (aumentado para evitar solapamientos)
-        var gapPx = labelGap;
-        if (gapPx < 10) { gapPx = 10; }
+        // Gaps independientes para ALT y NOT (estimación proporcional + mínimo)
+        var labelGapAlt = (_displayWidth * 0.02).toNumber();
+        var gapAltPx = labelGapAlt;
+        // Altitud puede usar un gap algo menor si es necesario
+        if (gapAltPx < 8) { gapAltPx = 8; }
+
+        var labelGapNot = (_displayWidth * 0.02).toNumber();
+        var gapNotPx = labelGapNot;
+        // Notificaciones mantienen el gap mínimo más conservador
+        if (gapNotPx < 10) { gapNotPx = 10; }
 
         // Altitud: etiqueta "ALT" en gris y valor numérico en blanco
         var altLabel = "ALT";
@@ -106,7 +112,7 @@ class TestView extends Ui.WatchFace {
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(leftArcX, yAlt, geo_small, altLabel, Gfx.TEXT_JUSTIFY_LEFT);
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(leftArcX + altLabelWidth + gapPx, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
+        targetDc.drawText(leftArcX + altLabelWidth + gapAltPx, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_LEFT);
 
         // Conexion telefono
         if (Sys.getDeviceSettings().phoneConnected) {
@@ -127,7 +133,7 @@ class TestView extends Ui.WatchFace {
             targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
             targetDc.drawText(leftArcX, yNotif, geo_small, notLabel, Gfx.TEXT_JUSTIFY_LEFT);
             targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawText(leftArcX + notLabelWidth + gapPx, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
+            targetDc.drawText(leftArcX + notLabelWidth + gapNotPx, yNotif, geo_small, nLabel, Gfx.TEXT_JUSTIFY_LEFT);
         }
 
         // Arco bateria (izquierda)
