@@ -62,7 +62,7 @@ class TestView extends Ui.WatchFace {
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
     function _drawStaticLayer(targetDc, layout, data) {
         var xRight    = layout[:xRight];
-        var xPos65    = (_displayWidth * 0.65).toNumber();
+        var xPos65    = _getXRight(_displayWidth);
         var yDate     = layout[:yDate];
         var yAlt      = layout[:yAlt];
         // var yMin      = layout[:yMin];
@@ -97,15 +97,15 @@ class TestView extends Ui.WatchFace {
         //targetDc.drawText(xRight, yBat, geo_small, batStr, Gfx.TEXT_JUSTIFY_LEFT);
 
         // Arco pasos (derecha, junto a la hora)
-        var xStepsArc = (_displayWidth * 0.65).toNumber();
+        var xStepsArc = _getXRight(_displayWidth);
         _drawProgressArcOnDc(targetDc, xStepsArc, yStepsArc, arcRadius, steps, stepsGoal, stepsColor);
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
             steps.toString(), Gfx.TEXT_JUSTIFY_CENTER);
 
-        // Altitud
+        // Altitud (etiqueta + valor)
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(xPos65, yAlt, geo_small, altStr, Gfx.TEXT_JUSTIFY_CENTER);
+        targetDc.drawText(xPos65, yAlt, geo_small, "Altitud " + altStr, Gfx.TEXT_JUSTIFY_CENTER);
 
         // Pasos
         //targetDc.setColor(stepsColor, Gfx.COLOR_TRANSPARENT);
@@ -166,8 +166,8 @@ class TestView extends Ui.WatchFace {
 
         // Frecuencia cardiaca: siempre en tiempo real
         var hrInfo = Act.getActivityInfo().currentHeartRate;
-        var xPos65 = (_displayWidth * 0.65).toNumber();
-        var cy = yMin; // Alinear verticalmente con los minutos
+        var xPos65 = _getXRight(_displayWidth);
+        var cy = yHr; // Usar porcentaje homogeneizado (45% alto)
         if (hrInfo != null && hrInfo > 0) {
             dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
             dc.drawText(xPos65, cy, geo_small, hrInfo.toString() + " bpm", Gfx.TEXT_JUSTIFY_CENTER);
@@ -212,11 +212,11 @@ class TestView extends Ui.WatchFace {
         var yHour     = _getYHour(displayHeight);
         var yMin      = _getYMin(displayHeight);
         // var yBat      = (displayHeight * 0.19).toNumber();
-        var yNotif    = (displayHeight * 0.62).toNumber();
-        var yAlt      = yNotif + (displayHeight * 0.05).toNumber(); // Justo debajo de mensajes
+        var yNotif    = (displayHeight * 0.52).toNumber();
+        var yAlt      = (displayHeight * 0.58).toNumber(); // Ahora calculado como porcentaje (58%)
         // var ySteps    = (displayHeight * 0.37).toNumber();
-        var yHr       = (displayHeight * 0.46).toNumber();
-        var yPhone    = (displayHeight * 0.55).toNumber();
+        var yHr       = (displayHeight * 0.40).toNumber();
+        var yPhone    = (displayHeight * 0.46).toNumber();
         // var lineTop   = (displayHeight * 0.17).toNumber();
         // var lineBot   = (displayHeight * 0.67).toNumber();
         var arcRadius = (displayHeight * 0.11).toNumber();
@@ -337,9 +337,9 @@ class TestView extends Ui.WatchFace {
         var yMin  = _getYMin(_displayHeight);
 
         dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(xLeft, yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
+        dc.drawText(_getXMin(_displayWidth), yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_RIGHT);
         dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(xLeft, yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_RIGHT);
+        dc.drawText(_getXMin(_displayWidth), yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_RIGHT);
 
         dc.clearClip();
     }
@@ -371,6 +371,11 @@ class TestView extends Ui.WatchFace {
     // Retorna la coordenada X para la columna de hora/minutos (porcentaje desde la izquierda).
     function _getXMin(displayWidth) {
         return (displayWidth * 0.35).toNumber();
+    }
+
+    // Retorna la coordenada X para la columna derecha (65% desde la izquierda).
+    function _getXRight(displayWidth) {
+        return (displayWidth * 0.65).toNumber();
     }
 
     // Retorna la coordenada Y para la hora (porcentaje desde arriba).
