@@ -315,7 +315,8 @@ class TestView extends Ui.WatchFace {
         var stepsGoal  = (activity.stepGoal == 0) ? 5000 : activity.stepGoal;
         var stepsPct   = (steps.toFloat() / stepsGoal.toFloat() * 100.0).toNumber();
         if (stepsPct > 100) { stepsPct = 100; }
-        var stepsColor = (stepsPct >= 100) ? Gfx.COLOR_GREEN : Gfx.COLOR_WHITE;
+        // Use only two colors for the steps arc: yellow for progress, dark gray for remainder.
+        var stepsColor = Gfx.COLOR_YELLOW;
 
         // Calcular número de pisos subidos (FLOOR)
         var FLOOR = 0;
