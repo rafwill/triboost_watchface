@@ -101,8 +101,9 @@ class TestView extends Ui.WatchFace {
         // For bezelSweep=340, startAngle = gapMid + 170 => gapMid 270 -> startAngle 80
         var bezelStart = 80;
         var bezelSweep = 340;
-        _drawBezelProgress(targetDc, cx, cy, outerRadius, data[:batPct], 100, data[:batColor], bezelStart, bezelSweep);
-        _drawBezelProgress(targetDc, cx, cy, innerRadius, data[:batPct], 100, data[:batColor], bezelStart, bezelSweep);
+        // Use yellow for the filled portion of the bezel and dark gray for the remainder
+        _drawBezelProgress(targetDc, cx, cy, outerRadius, data[:batPct], 100, Gfx.COLOR_YELLOW, bezelStart, bezelSweep);
+        _drawBezelProgress(targetDc, cx, cy, innerRadius, data[:batPct], 100, Gfx.COLOR_YELLOW, bezelStart, bezelSweep);
         // Draw battery percentage inside the bezel gap (centered in the empty arc)
         // Place gap midpoint angle at 90º (top of the watch)
         var gapMid = 90.0;
