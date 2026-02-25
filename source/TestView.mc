@@ -125,6 +125,7 @@ class TestView extends Ui.WatchFace {
         // Queremos que el BORDE IZQUIERDO del arco esté en 55% del ancho.
         var leftArcX = (_displayWidth * 0.55).toNumber();
         var xStepsArc = (leftArcX + arcRadius).toNumber();
+        // Draw steps arc using user's steps and goal; background gray, fill uses stepsColor
         _drawProgressArcOnDc(targetDc, xStepsArc, yStepsArc, arcRadius, steps, stepsGoal, stepsColor);
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
         targetDc.drawText(xStepsArc, yStepsArc - (arcRadius * 0.35).toNumber(), geo_small,
@@ -187,13 +188,10 @@ class TestView extends Ui.WatchFace {
         if (logo != null) {
             var logoW = logo.getWidth().toNumber();
             var logoH = logo.getHeight().toNumber();
-            var scale = 1.4; // 40% larger
-            var drawW = (logoW * scale).toNumber();
-            var drawH = (logoH * scale).toNumber();
-            var logoX = ((_displayWidth / 2) - (drawW / 2)).toNumber();
+            // Some SDKs don't support drawBitmap(x,y,w,h,bitmap). Use compatible call.
+            var logoX = ((_displayWidth / 2) - (logoW / 2)).toNumber();
             var logoY = (_displayHeight * 0.70).toNumber();
-            // Attempt to draw scaled; drawBitmap(x,y,w,h,bitmap) is supported on newer SDKs
-            targetDc.drawBitmap(logoX, logoY, drawW, drawH, logo);
+            targetDc.drawBitmap(logoX, logoY, logo);
         }
     }
 
