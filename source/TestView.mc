@@ -53,8 +53,8 @@ class TestView extends Ui.WatchFace {
         _displayWidth    = dc.getWidth();
         _displayHeight   = dc.getHeight();
         // Crear el BufferedBitmap si el dispositivo lo soporta (SDK 3.x+)
-        if (Graphics has :createBufferedBitmap) {
-            var ref = Graphics.createBufferedBitmap(
+        if (Gfx has :createBufferedBitmap) {
+            var ref = Gfx.createBufferedBitmap(
                 {:width => _displayWidth, :height => _displayHeight}
             );
             _bgBuffer = ref.get();
