@@ -1,2 +1,4 @@
 # Ignore all files in bin directory
 bin/
+# Ignore developer_key file
+developer_key
