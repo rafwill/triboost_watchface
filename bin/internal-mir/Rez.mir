@@ -652,7 +652,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [filename,85,18,26]; @symbol_type<0> = [String,85,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__about.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__about.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [compress,86,18,26]; @symbol_type<0> = [String,86,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [dithering,87,18,27]; @symbol_type<0> = [String,87,31,37]; ]
@@ -666,7 +666,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [filename,92,18,26]; @symbol_type<0> = [String,92,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__question.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__question.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [dithering,93,18,27]; @symbol_type<0> = [String,93,31,37]; ]
             const dithering as String = "none";
         }
@@ -711,7 +711,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [filename,106,18,26]; @symbol_type<0> = [String,106,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__discard.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__discard.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [compress,107,18,26]; @symbol_type<0> = [String,107,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [dithering,108,18,27]; @symbol_type<0> = [String,108,31,37]; ]
@@ -751,7 +751,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [filename,123,18,26]; @symbol_type<0> = [String,123,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__discard.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__discard.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [dithering,124,18,27]; @symbol_type<0> = [String,124,31,37]; ]
             const dithering as String = "none";
         }
@@ -761,7 +761,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [filename,128,18,26]; @symbol_type<0> = [String,128,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [dithering,129,18,27]; @symbol_type<0> = [String,129,31,37]; ]
             const dithering as String = "none";
         }
@@ -818,7 +818,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [filename,148,18,26]; @symbol_type<0> = [String,148,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_left_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_left_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [dithering,149,18,27]; @symbol_type<0> = [String,149,31,37]; ]
             const dithering as String = "none";
         }
@@ -886,7 +886,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [filename,173,18,26]; @symbol_type<0> = [String,173,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_left_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_left_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [dithering,174,18,27]; @symbol_type<0> = [String,174,31,37]; ]
             const dithering as String = "none";
         }
@@ -906,7 +906,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [filename,183,18,26]; @symbol_type<0> = [String,183,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [dithering,184,18,27]; @symbol_type<0> = [String,184,31,37]; ]
             const dithering as String = "none";
         }
@@ -926,7 +926,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [filename,193,18,26]; @symbol_type<0> = [String,193,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_completion.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_completion.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [dithering,194,18,27]; @symbol_type<0> = [String,194,31,37]; ]
             const dithering as String = "none";
         }
@@ -956,7 +956,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [filename,208,18,26]; @symbol_type<0> = [String,208,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__hint_button_left_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__hint_button_left_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [dithering,209,18,27]; @symbol_type<0> = [String,209,31,37]; ]
             const dithering as String = "none";
         }
@@ -990,7 +990,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [filename,222,18,26]; @symbol_type<0> = [String,222,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__hint_button_left_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__hint_button_left_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [dithering,223,18,27]; @symbol_type<0> = [String,223,31,37]; ]
             const dithering as String = "none";
         }
@@ -1014,7 +1014,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [filename,231,18,26]; @symbol_type<0> = [String,231,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__save.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__save.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [dithering,232,18,27]; @symbol_type<0> = [String,232,31,37]; ]
             const dithering as String = "none";
         }
@@ -1048,7 +1048,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [filename,245,18,26]; @symbol_type<0> = [String,245,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__warning.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__warning.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [dithering,246,18,27]; @symbol_type<0> = [String,246,31,37]; ]
             const dithering as String = "none";
         }
@@ -1074,7 +1074,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [filename,255,18,26]; @symbol_type<0> = [String,255,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_keep.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_keep.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [dithering,256,18,27]; @symbol_type<0> = [String,256,31,37]; ]
             const dithering as String = "none";
         }
@@ -1094,7 +1094,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [filename,265,18,26]; @symbol_type<0> = [String,265,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [dithering,266,18,27]; @symbol_type<0> = [String,266,31,37]; ]
             const dithering as String = "none";
         }
@@ -1114,7 +1114,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [filename,275,18,26]; @symbol_type<0> = [String,275,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_right_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_right_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [dithering,276,18,27]; @symbol_type<0> = [String,276,31,37]; ]
             const dithering as String = "none";
         }
@@ -1134,7 +1134,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [filename,285,18,26]; @symbol_type<0> = [String,285,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [dithering,286,18,27]; @symbol_type<0> = [String,286,31,37]; ]
             const dithering as String = "none";
         }
@@ -1194,7 +1194,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [filename,309,18,26]; @symbol_type<0> = [String,309,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__search.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__search.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [compress,310,18,26]; @symbol_type<0> = [String,310,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [dithering,311,18,27]; @symbol_type<0> = [String,311,31,37]; ]
@@ -1224,7 +1224,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 321; @position = 18; @symbol_constdef = [filename,321,18,26]; @symbol_type<0> = [String,321,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_keep.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_keep.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [dithering,322,18,27]; @symbol_type<0> = [String,322,31,37]; ]
             const dithering as String = "none";
         }
@@ -1234,7 +1234,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [filename,326,18,26]; @symbol_type<0> = [String,326,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__save.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__save.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [compress,327,18,26]; @symbol_type<0> = [String,327,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [dithering,328,18,27]; @symbol_type<0> = [String,328,31,37]; ]
@@ -1248,7 +1248,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [filename,333,18,26]; @symbol_type<0> = [String,333,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_left_middle.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__hint_button_left_middle.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [dithering,334,18,27]; @symbol_type<0> = [String,334,31,37]; ]
             const dithering as String = "none";
         }
@@ -1258,7 +1258,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [filename,338,18,26]; @symbol_type<0> = [String,338,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__search.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__search.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [dithering,339,18,27]; @symbol_type<0> = [String,339,31,37]; ]
             const dithering as String = "none";
         }
@@ -1268,7 +1268,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [filename,343,18,26]; @symbol_type<0> = [String,343,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__hint_button_left_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__hint_button_left_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [dithering,344,18,27]; @symbol_type<0> = [String,344,31,37]; ]
             const dithering as String = "none";
         }
@@ -1278,7 +1278,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [filename,348,18,26]; @symbol_type<0> = [String,348,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__hint_button_left_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__hint_button_left_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [dithering,349,18,27]; @symbol_type<0> = [String,349,31,37]; ]
             const dithering as String = "none";
         }
@@ -1298,7 +1298,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [filename,358,18,26]; @symbol_type<0> = [String,358,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_reject.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_reject.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [dithering,359,18,27]; @symbol_type<0> = [String,359,31,37]; ]
             const dithering as String = "none";
         }
@@ -1324,7 +1324,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [filename,368,18,26]; @symbol_type<0> = [String,368,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_completion.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_completion.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [dithering,369,18,27]; @symbol_type<0> = [String,369,31,37]; ]
             const dithering as String = "none";
         }
@@ -1350,7 +1350,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [filename,378,18,26]; @symbol_type<0> = [String,378,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__cancel.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__cancel.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [dithering,379,18,27]; @symbol_type<0> = [String,379,31,37]; ]
             const dithering as String = "none";
         }
@@ -1360,7 +1360,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [filename,383,18,26]; @symbol_type<0> = [String,383,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__hint_button_right_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__hint_button_right_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [dithering,384,18,27]; @symbol_type<0> = [String,384,31,37]; ]
             const dithering as String = "none";
         }
@@ -1404,7 +1404,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [filename,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [dithering,403,18,27]; @symbol_type<0> = [String,403,31,37]; ]
             const dithering as String = "none";
         }
@@ -1414,7 +1414,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [filename,407,18,26]; @symbol_type<0> = [String,407,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__hint_button_left_middle.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__hint_button_left_middle.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [dithering,408,18,27]; @symbol_type<0> = [String,408,31,37]; ]
             const dithering as String = "none";
         }
@@ -1424,7 +1424,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [filename,412,18,26]; @symbol_type<0> = [String,412,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_keep.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_keep.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [dithering,413,18,27]; @symbol_type<0> = [String,413,31,37]; ]
             const dithering as String = "none";
         }
@@ -1434,7 +1434,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [filename,417,18,26]; @symbol_type<0> = [String,417,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__cancel.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__cancel.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [dithering,418,18,27]; @symbol_type<0> = [String,418,31,37]; ]
             const dithering as String = "none";
         }
@@ -1444,7 +1444,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [filename,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_reject.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_reject.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
             const dithering as String = "none";
         }
@@ -1454,7 +1454,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [filename,427,18,26]; @symbol_type<0> = [String,427,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__about.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__about.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [dithering,428,18,27]; @symbol_type<0> = [String,428,31,37]; ]
             const dithering as String = "none";
         }
@@ -1484,7 +1484,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [filename,442,18,26]; @symbol_type<0> = [String,442,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_reject.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_reject.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [dithering,443,18,27]; @symbol_type<0> = [String,443,31,37]; ]
             const dithering as String = "none";
         }
@@ -1494,7 +1494,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [filename,447,18,26]; @symbol_type<0> = [String,447,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [dithering,448,18,27]; @symbol_type<0> = [String,448,31,37]; ]
             const dithering as String = "none";
         }
@@ -1532,7 +1532,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [filename,466,18,26]; @symbol_type<0> = [String,466,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_delete.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_delete.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [dithering,467,18,27]; @symbol_type<0> = [String,467,31,37]; ]
             const dithering as String = "none";
         }
@@ -1552,7 +1552,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [filename,476,18,26]; @symbol_type<0> = [String,476,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__hint_button_left_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__hint_button_left_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [dithering,477,18,27]; @symbol_type<0> = [String,477,31,37]; ]
             const dithering as String = "none";
         }
@@ -1562,7 +1562,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [filename,481,18,26]; @symbol_type<0> = [String,481,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__hint_button_left_middle.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__hint_button_left_middle.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [dithering,482,18,27]; @symbol_type<0> = [String,482,31,37]; ]
             const dithering as String = "none";
         }
@@ -1584,7 +1584,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [filename,492,18,26]; @symbol_type<0> = [String,492,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_destructive__warning.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_destructive__warning.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [dithering,493,18,27]; @symbol_type<0> = [String,493,31,37]; ]
             const dithering as String = "none";
         }
@@ -1602,7 +1602,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [filename,501,18,26]; @symbol_type<0> = [String,501,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__cancel.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__cancel.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [compress,502,18,26]; @symbol_type<0> = [String,502,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [dithering,503,18,27]; @symbol_type<0> = [String,503,31,37]; ]
@@ -1652,7 +1652,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [filename,523,18,26]; @symbol_type<0> = [String,523,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__check.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__check.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [dithering,524,18,27]; @symbol_type<0> = [String,524,31,37]; ]
             const dithering as String = "none";
         }
@@ -1676,7 +1676,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [filename,532,18,26]; @symbol_type<0> = [String,532,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__revert.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__revert.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [dithering,533,18,27]; @symbol_type<0> = [String,533,31,37]; ]
             const dithering as String = "none";
         }
@@ -1694,7 +1694,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [filename,541,18,26]; @symbol_type<0> = [String,541,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__hint_button_left_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__hint_button_left_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [dithering,542,18,27]; @symbol_type<0> = [String,542,31,37]; ]
             const dithering as String = "none";
         }
@@ -1704,7 +1704,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [filename,546,18,26]; @symbol_type<0> = [String,546,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__check.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__check.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [compress,547,18,26]; @symbol_type<0> = [String,547,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [dithering,548,18,27]; @symbol_type<0> = [String,548,31,37]; ]
@@ -1740,7 +1740,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [filename,564,18,26]; @symbol_type<0> = [String,564,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [dithering,565,18,27]; @symbol_type<0> = [String,565,31,37]; ]
             const dithering as String = "none";
         }
@@ -1758,7 +1758,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [filename,573,18,26]; @symbol_type<0> = [String,573,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__hint_button_left_middle.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__hint_button_left_middle.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [dithering,574,18,27]; @symbol_type<0> = [String,574,31,37]; ]
             const dithering as String = "none";
         }
@@ -1768,7 +1768,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [filename,578,18,26]; @symbol_type<0> = [String,578,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__hint_button_right_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__hint_button_right_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [dithering,579,18,27]; @symbol_type<0> = [String,579,31,37]; ]
             const dithering as String = "none";
         }
@@ -1778,7 +1778,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [filename,583,18,26]; @symbol_type<0> = [String,583,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__hint_button_right_bottom.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__hint_button_right_bottom.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [dithering,584,18,27]; @symbol_type<0> = [String,584,31,37]; ]
             const dithering as String = "none";
         }
@@ -1788,7 +1788,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [filename,588,18,26]; @symbol_type<0> = [String,588,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__revert.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__revert.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [compress,589,18,26]; @symbol_type<0> = [String,589,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [dithering,590,18,27]; @symbol_type<0> = [String,590,31,37]; ]
@@ -1802,7 +1802,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [filename,595,18,26]; @symbol_type<0> = [String,595,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_delete.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_delete.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [dithering,596,18,27]; @symbol_type<0> = [String,596,31,37]; ]
             const dithering as String = "none";
         }
@@ -1812,7 +1812,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [filename,600,18,26]; @symbol_type<0> = [String,600,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__question.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__question.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [compress,601,18,26]; @symbol_type<0> = [String,601,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [dithering,602,18,27]; @symbol_type<0> = [String,602,31,37]; ]
@@ -1826,7 +1826,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [filename,607,18,26]; @symbol_type<0> = [String,607,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__discard.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__discard.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [dithering,608,18,27]; @symbol_type<0> = [String,608,31,37]; ]
             const dithering as String = "none";
         }
@@ -1864,7 +1864,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [filename,622,18,26]; @symbol_type<0> = [String,622,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_completion.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_completion.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [dithering,623,18,27]; @symbol_type<0> = [String,623,31,37]; ]
             const dithering as String = "none";
         }
@@ -1911,7 +1911,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [filename,637,18,26]; @symbol_type<0> = [String,637,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_dark__warning.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_dark__warning.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [compress,638,18,26]; @symbol_type<0> = [String,638,30,36]; ]
             const compress as String = "true";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [dithering,639,18,27]; @symbol_type<0> = [String,639,31,37]; ]
@@ -1963,7 +1963,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [filename,660,18,26]; @symbol_type<0> = [String,660,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\confirmation_icon__hint_delete.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\confirmation_icon__hint_delete.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [dithering,661,18,27]; @symbol_type<0> = [String,661,31,37]; ]
             const dithering as String = "none";
         }
@@ -1973,7 +1973,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [filename,665,18,26]; @symbol_type<0> = [String,665,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_light__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_light__hint_button_right_top.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [dithering,666,18,27]; @symbol_type<0> = [String,666,31,37]; ]
             const dithering as String = "none";
         }
@@ -1993,7 +1993,7 @@ c__Github_triboost_watchface_bin_gen_006_B3291_00_source_Rez_mcgen_21_73_44_8_st
             <init> {
             }
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [filename,675,18,26]; @symbol_type<0> = [String,675,30,36]; ]
-            const filename as String = "C:\\Garmin\\Devices\\fenix6xpro\\system_icon_positive__check.svg";
+            const filename as String = "C:\\Users\\Rafa\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6xpro\\system_icon_positive__check.svg";
             [ @file = "c:\Github\triboost_watchface\bin\gen\006-B3291-00\source\Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [dithering,676,18,27]; @symbol_type<0> = [String,676,31,37]; ]
             const dithering as String = "none";
         }
