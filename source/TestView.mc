@@ -67,24 +67,24 @@ class TestView extends Ui.WatchFace {
     // fecha, bateria, altitud, pasos, conexion, notificaciones, linea, arcos, logo.
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
     function _drawStaticLayer(targetDc, layout, data) {
-        // var xRight intentionally unused in this layer (kept in layout for compatibility)
-        var yDate     = layout[:yDate];
-        var yAlt      = layout[:yAlt];
-        var yStepsArc = (_displayHeight * 0.25).toNumber();
-        var yPhone    = layout[:yPhone];
-        var yNotif    = layout[:yNotif];
-        var arcRadius = layout[:arcRadius];
-        var arcCY     = layout[:arcCY];
-        var arcBatX   = layout[:arcBatX];
 
-        var dateString = data[:dateString];
-        var batPct     = data[:batPct];
-        var batColor   = data[:batColor];
-        var altStr     = data[:altStr];
-        var floor      = data[:floor];
-        var steps      = data[:steps];
-        var stepsGoal  = data[:stepsGoal];
-        var stepsColor = data[:stepsColor];
+        var yDate     = layout[:yDate].toNumber();
+        var yAlt      = layout[:yAlt].toNumber();
+        var yStepsArc = (_displayHeight * 0.25).toNumber();
+        var yPhone    = layout[:yPhone].toNumber();
+        var yNotif    = layout[:yNotif].toNumber();
+        var arcRadius = layout[:arcRadius].toNumber();
+        var arcCY     = layout[:arcCY].toNumber();
+        var arcBatX   = layout[:arcBatX].toNumber();
+
+        var dateString = data[:dateString].toString();
+        var batPct     = data[:batPct].toNumber();
+        var batColor   = data[:batColor].toNumber();
+        var altStr     = data[:altStr].toString();
+        var floor      = data[:floor].toNumber();
+        var steps      = data[:steps].toNumber();
+        var stepsGoal  = data[:stepsGoal].toNumber();
+        var stepsColor = data[:stepsColor].toNumber();
 
         targetDc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
         targetDc.clear();
@@ -102,8 +102,8 @@ class TestView extends Ui.WatchFace {
         var bezelStart = 80;
         var bezelSweep = 340;
         // Use yellow for the filled portion of the bezel and dark gray for the remainder
-        _drawBezelProgress(targetDc, cx, cy, outerRadius, data[:batPct], 100, Gfx.COLOR_YELLOW, bezelStart, bezelSweep);
-        _drawBezelProgress(targetDc, cx, cy, innerRadius, data[:batPct], 100, Gfx.COLOR_YELLOW, bezelStart, bezelSweep);
+        _drawBezelProgress(targetDc, cx, cy, outerRadius, batPct, 100, Gfx.COLOR_YELLOW, bezelStart, bezelSweep);
+        _drawBezelProgress(targetDc, cx, cy, innerRadius, batPct, 100, Gfx.COLOR_YELLOW, bezelStart, bezelSweep);
         // Draw battery percentage inside the bezel gap (centered in the empty arc)
         // Place gap midpoint angle at 90º (top of the watch)
         var gapMid = 90.0;
@@ -115,7 +115,7 @@ class TestView extends Ui.WatchFace {
         var pctYOffset = 16; // pixels (moved 8px more)
         pctY = (pctY - pctYOffset).toNumber();
         targetDc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawText(pctX, pctY, geo_small, (data[:batPct].toString() + "%"), Gfx.TEXT_JUSTIFY_CENTER);
+        targetDc.drawText(pctX, pctY, geo_small, (batPct.toString() + "%"), Gfx.TEXT_JUSTIFY_CENTER);
         // --------------------------------------------------------------------
 
         // Fecha
@@ -354,7 +354,7 @@ class TestView extends Ui.WatchFace {
             // Si hay buffer: dibujar en el buffer. Si no: dibujar directamente en dc.
             var targetDc = (_bgBuffer != null) ? _bgBuffer.getDc() : dc;
             var staticLayout = {
-                :xRight => xRight,
+                :cx => cx, :xRight => xRight,
                 :yDate => yDate, :yAlt => yAlt, :yMin => yMin,
                 :yPhone => yPhone, :yNotif => yNotif,
                 :arcRadius => arcRadius, :arcCY => arcCY, :arcBatX => arcBatX
@@ -463,13 +463,13 @@ class TestView extends Ui.WatchFace {
     // Fondo completo en gris oscuro; relleno coloreado proporcional a value/maxValue.
     function _drawProgressArcOnDc(targetDc, x, y, radius, value, maxValue, color) {
         targetDc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, 90, -270);
+        targetDc.drawArc(x, y, radius, Gfx.ARC_CLOCKWISE, 90, -270);
         if (maxValue > 0 && value > 0) {
             var pct = value.toFloat() / maxValue.toFloat();
             if (pct > 1.0) { pct = 1.0; }
             var sweep = (pct * 360.0).toNumber();
             targetDc.setColor(color, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, 90, 90 - sweep);
+            targetDc.drawArc(x, y, radius, Gfx.ARC_CLOCKWISE, 90, 90 - sweep);
         }
     }
 
@@ -482,14 +482,14 @@ class TestView extends Ui.WatchFace {
         // endAngle = startAngle - sweepDegrees (can be negative)
         var endAngleBg = (startAngle - totalSweep).toNumber();
         targetDc.setColor(bgColor, Gfx.COLOR_TRANSPARENT);
-        targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, startAngle, endAngleBg);
+        targetDc.drawArc(x, y, radius, Gfx.ARC_CLOCKWISE, startAngle, endAngleBg);
         if (maxValue > 0 && value > 0) {
             var pct = value.toFloat() / maxValue.toFloat();
             if (pct > 1.0) { pct = 1.0; }
             var sweepDeg = (totalSweep * pct).toNumber();
             var endAngleFill = (startAngle - sweepDeg).toNumber();
             targetDc.setColor(color, Gfx.COLOR_TRANSPARENT);
-            targetDc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, startAngle, endAngleFill);
+            targetDc.drawArc(x, y, radius, Gfx.ARC_CLOCKWISE, startAngle, endAngleFill);
         }
     }
 
