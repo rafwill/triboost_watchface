@@ -66,7 +66,7 @@ class TestView extends Ui.WatchFace {
     // Dibuja en targetDc los elementos que cambian como mucho cada minuto:
     // fecha, bateria, altitud, pasos, conexion, notificaciones, linea, arcos, logo.
     // Se usa tanto para el BufferedBitmap como para el dc real en dispositivos sin buffer.
-    function _drawStaticLayer(targetDc, layout, data) {
+    function _drawStaticLayer(targetDc, layout as Lang.Dictionary, data as Lang.Dictionary) {
 
         var yDate     = layout[:yDate].toNumber();
         var yAlt      = layout[:yAlt].toNumber();
@@ -74,12 +74,9 @@ class TestView extends Ui.WatchFace {
         var yPhone    = layout[:yPhone].toNumber();
         var yNotif    = layout[:yNotif].toNumber();
         var arcRadius = layout[:arcRadius].toNumber();
-        var arcCY     = layout[:arcCY].toNumber();
-        var arcBatX   = layout[:arcBatX].toNumber();
 
         var dateString = data[:dateString].toString();
         var batPct     = data[:batPct].toNumber();
-        var batColor   = data[:batColor].toNumber();
         var altStr     = data[:altStr].toString();
         var floor      = data[:floor].toNumber();
         var steps      = data[:steps].toNumber();
@@ -188,7 +185,6 @@ class TestView extends Ui.WatchFace {
         // Logo: center horizontally, keep Y at 70% of display height
         if (logo != null) {
             var logoW = logo.getWidth().toNumber();
-            var logoH = logo.getHeight().toNumber();
             // Some SDKs don't support drawBitmap(x,y,w,h,bitmap). Use compatible call.
             var logoX = ((_displayWidth / 2) - (logoW / 2)).toNumber();
             var logoY = (_displayHeight * 0.70).toNumber();
@@ -407,14 +403,14 @@ class TestView extends Ui.WatchFace {
         // Redibujar hora y minutos con las coordenadas calculadas en onUpdate
         var xOffset = (_displayHeight == 180) ? 12 : 0;
         xOffset = mirrored ? -xOffset : xOffset;
-        var cx    = _displayWidth / 2 + xOffset;
+        var xMin  = (_getXMin(_displayWidth) + xOffset).toNumber();
         var yHour = _getYHour(_displayHeight);
         var yMin  = _getYMin(_displayHeight);
 
         dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(_getXMin(_displayWidth), yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
+        dc.drawText(xMin, yHour, calibri_numbers, strhour, Gfx.TEXT_JUSTIFY_CENTER);
         dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(_getXMin(_displayWidth), yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_CENTER);
+        dc.drawText(xMin, yMin,  calibri_numbers, strmin,  Gfx.TEXT_JUSTIFY_CENTER);
 
         dc.clearClip();
     }

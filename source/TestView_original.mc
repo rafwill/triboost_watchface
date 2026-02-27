@@ -36,7 +36,6 @@ class TestView_original extends WatchUi.WatchFace {
     	
     
         // Get the current time and format it correctly
-        var timeFormat = "$1$:$2$";
         var clockTime = System.getClockTime();
         var hour = clockTime.hour;
         if (!System.getDeviceSettings().is24Hour) {
