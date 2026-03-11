@@ -20,6 +20,7 @@ class TestView extends Ui.WatchFace {
     var mirrored         = false;
     var showNotifications = true;
     var logo             = null;
+    var logoDisplay      = null;
     var _isSleeping      = false;
 
     // ── Fase 4: Buffer estático y soporte onPartialUpdate ───────────────────────
@@ -50,6 +51,7 @@ class TestView extends Ui.WatchFace {
         custom           = Ui.loadResource(Rez.Fonts.custom);
         calibri_numbers  = Ui.loadResource(Rez.Fonts.calibri_numbers);
         logo             = Ui.loadResource(Rez.Drawables.triboost);
+        logoDisplay      = Ui.loadResource(Rez.Drawables.triboost_logo);
         _displayWidth    = dc.getWidth();
         _displayHeight   = dc.getHeight();
         // Crear el BufferedBitmap si el dispositivo lo soporta (SDK 3.x+)
@@ -182,13 +184,12 @@ class TestView extends Ui.WatchFace {
 
         // Left battery arc removed (now represented in the bezel)
 
-        // Logo: center horizontally, keep Y at 70% of display height
-        if (logo != null) {
-            var logoW = logo.getWidth().toNumber();
-            // Some SDKs don't support drawBitmap(x,y,w,h,bitmap). Use compatible call.
-            var logoX = ((_displayWidth / 2) - (logoW / 2)).toNumber();
+        // Logo: positioned from left edge of hour column (~18% of width)
+        // The image has been pre-scaled to 176x90px to match the desired width
+        if (logoDisplay != null) {
+            var logoX = ((_displayWidth - logoDisplay.getWidth()) / 2).toNumber();
             var logoY = (_displayHeight * 0.70).toNumber();
-            targetDc.drawBitmap(logoX, logoY, logo);
+            targetDc.drawBitmap(logoX, logoY, logoDisplay);
         }
     }
 

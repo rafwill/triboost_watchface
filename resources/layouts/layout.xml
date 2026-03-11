@@ -1,5 +1,5 @@
 <layout id="WatchFace">
-    <bitmap id="triboost" x="center" y="120" filename="../drawables/Triboost_small.png" />
+    <bitmap id="triboost" x="center" y="120" filename="../drawables/triboost-logo-blanco-sm.png" />
     <label id="DateString" x="center" y="start" font="@Fonts.geo_small" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_YELLOW" />
     <label id="Hour" x="center" y="20" font="@Fonts.calibri_numbers" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_YELLOW" />
     <label id="Min" x="center" y="75" font="@Fonts.calibri_numbers" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY" />
