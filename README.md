@@ -1,6 +1,6 @@
 # Triboost Watchface for Garmin
 
-![Triboost Watchface](resources/drawables/Release100.jpg)
+![Triboost Watchface](images/Release100.jpg)
 
 ## Description
 
@@ -37,12 +37,12 @@ Triboost Watchface is a custom watchface for Garmin watches, designed for the Tr
 
 ## Contact
 
-If you have issues or suggestions, open an issue on GitHub or contact the Triboost club at [triboost.club](https://www.triboost.club/).
+For now you can see our Triboost homepage, and you can become a [TRIBOOSTER](https://www.triboost.club/)!!!!
 
 ---
 # Triboost Watchface para Garmin
 
-![Triboost Watchface](resources/drawables/Release100.jpg)
+![Triboost Watchface](images/Release100.jpg)
 
 ## Descripción
 
@@ -79,4 +79,4 @@ Triboost Watchface es una esfera personalizada para relojes Garmin, diseñada pa
 
 ## Contacto
 
-Si tienes problemas o sugerencias, abre un issue en GitHub o contacta con el club Triboost en [triboost.club](https://www.triboost.club/).
+Puedes acceder a la pagina del club y convertirte en [TRIBOOSTER](https://www.triboost.club/)!!!!
